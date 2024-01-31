@@ -1,5 +1,26 @@
+@import "variables";
 @mixin display_flex($x: center, $y: center) {
   display: flex;
   justify-content: $x;
   align-items: $y;
+}
+
+@mixin navigation_font_style() {
+  color: $menuTextcolor;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+@mixin button_no_decor {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+@mixin nav_bar_hover {
+  transition-duration: 0.5s;
+  &:hover {
+    transition-duration: 0.5s;
+    background-color: $hoverColor;
+  }
 }
