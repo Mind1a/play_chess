@@ -24,3 +24,9 @@
     background-color: $hoverColor;
   }
 }
+
+@mixin text_styles($color: $textColor, $size: 65px, $weigt: lighter) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weigt;
+}

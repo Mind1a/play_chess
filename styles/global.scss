@@ -49,3 +49,38 @@ header {
     }
   }
 }
+
+main {
+  @include display_flex();
+
+  .section_about_project {
+    @include display_flex(center, center);
+    flex-direction: column;
+    width: 113.687rem;
+    height: 43.678rem;
+    margin-top: 60px;
+
+    .text_section {
+      max-width: 1640px;
+      width: 100%;
+      height: 12.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h1 {
+        @include text_styles($titleColor, 65px, bold);
+      }
+      p {
+        @include text_styles($textColor, 24px, 400);
+      }
+    }
+
+    .artwork {
+      width: 50rem;
+      height: 21.875rem;
+      margin-top: 82.14px;
+      @include display_flex(space-between, center);
+    }
+  }
+}
