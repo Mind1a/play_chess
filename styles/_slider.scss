@@ -1,0 +1,34 @@
+@import "./utils/mixins";
+@import "./utils/reset";
+@import "./utils/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .slider {
+    width: 100%;
+    height: 54.75rem;
+    @include display_flex();
+
+    .swiper {
+      width: 102.5rem;
+      height: 47.25rem;
+      border-radius: 1.875rem;
+      background-color: gray;
+
+      .swiper-slide {
+        @include display_flex();
+      }
+      .swiper-button-prev {
+        margin-left: 2.656rem;
+        @include slider-button;
+      }
+      .swiper-button-next {
+        margin-right: 2.656rem;
+        @include slider-button;
+      }
+    }
+  }
+}

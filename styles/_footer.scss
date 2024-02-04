@@ -1,0 +1,19 @@
+@import "./utils/mixins";
+@import "./utils/reset";
+@import "./utils/variables";
+
+footer {
+  width: 100%;
+  height: 12.063rem;
+  background-color: $mainColor;
+  @include display_flex();
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $menuTextcolor;
+    span {
+      color: $hoverColor;
+      font-weight: 600;
+    }
+  }
+}
