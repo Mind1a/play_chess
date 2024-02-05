@@ -30,3 +30,16 @@
   font-size: $size;
   font-weight: $weigt;
 }
+
+@mixin slider-button {
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 100%;
+  color: #ffffff;
+  background-color: $mainColor;
+  transition-duration: 0.5s;
+  &:hover {
+    transition-duration: 0.5s;
+    background-color: $hoverColor;
+  }
+}
