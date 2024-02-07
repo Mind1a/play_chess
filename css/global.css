@@ -318,6 +318,12 @@ table {
   transition-duration: 0.5s;
   background-color: #1d1e4a;
 }
+* .slider .swiper .padding-button-prev {
+  padding-right: 0.5rem;
+}
+* .slider .swiper .padding-button-next {
+  padding-left: 0.5rem;
+}
 * .slider .swiper .swiper-button-next {
   margin-right: 2.656rem;
   width: 5.625rem;
