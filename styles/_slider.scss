@@ -25,6 +25,12 @@
         margin-left: 2.656rem;
         @include slider-button;
       }
+      .padding-button-prev {
+        padding-right: 0.5rem;
+      }
+      .padding-button-next {
+        padding-left: 0.5rem;
+      }
       .swiper-button-next {
         margin-right: 2.656rem;
         @include slider-button;
