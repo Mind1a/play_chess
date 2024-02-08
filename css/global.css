@@ -295,7 +295,7 @@ table {
   align-items: center;
 }
 * .slider .swiper {
-  width: 102.5rem;
+  width: 86.25rem;
   height: 47.25rem;
   border-radius: 1.875rem;
   background-color: gray;
@@ -311,12 +311,12 @@ table {
   height: 5.625rem;
   border-radius: 100%;
   color: #ffffff;
-  background-color: #9c86cd;
+  background-color: #1d1e4a;
   transition-duration: 0.5s;
 }
 * .slider .swiper .swiper-button-prev:hover {
   transition-duration: 0.5s;
-  background-color: #1d1e4a;
+  background-color: #9c86cd;
 }
 * .slider .swiper .padding-button-prev {
   padding-right: 0.5rem;
@@ -330,12 +330,12 @@ table {
   height: 5.625rem;
   border-radius: 100%;
   color: #ffffff;
-  background-color: #9c86cd;
+  background-color: #1d1e4a;
   transition-duration: 0.5s;
 }
 * .slider .swiper .swiper-button-next:hover {
   transition-duration: 0.5s;
-  background-color: #1d1e4a;
+  background-color: #9c86cd;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -480,7 +480,7 @@ table {
   border-spacing: 0;
 }
 
-footer {
+footer .footer-container {
   width: 100%;
   height: 12.063rem;
   background-color: #9c86cd;
@@ -488,14 +488,206 @@ footer {
   justify-content: center;
   align-items: center;
 }
-footer p {
+footer .footer-container .footer-text {
   font-size: 1.5rem;
   font-weight: 400;
   color: #ffffff;
+  line-height: 2.04rem;
 }
-footer p span {
+footer .footer-container .footer-text span {
   color: #1d1e4a;
   font-weight: 600;
+  line-height: 2.04rem;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.how-to-use-app {
+  width: 86.25rem;
+  height: 39.125rem;
+  margin: auto;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+.how-to-use-app .how-to-use-app-title {
+  color: #1d1e4a;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.08rem;
+}
+.how-to-use-app .chess-figures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  row-gap: 40px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin-top: 40px;
+}
+.how-to-use-app .chess-figures .chess-card {
+  width: 42.375rem;
+  height: 9.188rem;
+  display: flex;
+}
+.how-to-use-app .chess-figures .chess-card img {
+  width: 7.188rem;
+  height: 7.188rem;
+  margin-right: 1.25rem;
+}
+.how-to-use-app .chess-figures .chess-card .figure-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.how-to-use-app .chess-figures .chess-card .figure-card-text .figure-title {
+  font-size: 1.75rem;
+  line-height: 38px;
+  color: #252525;
+}
+.how-to-use-app .chess-figures .chess-card .figure-card-text .figur-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #252525;
 }
 
 header {
@@ -504,7 +696,7 @@ header {
   align-items: center;
 }
 header .header_part {
-  max-width: 109.73rem;
+  max-width: 93.75rem;
   width: 100%;
   height: 8.625rem;
   margin-top: 1.25rem;
@@ -515,7 +707,7 @@ header .header_part {
   align-items: center;
 }
 header .header_part .logo {
-  margin-left: 60px;
+  margin-left: 3.75rem;
 }
 header .header_part .menu {
   width: 35.438rem;
@@ -577,29 +769,31 @@ main .section_about_project {
   width: 100%;
   margin: auto;
   height: 43.678rem;
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 main .section_about_project .text_section {
-  max-width: 109.73rem;
-  height: 12.75rem;
+  max-width: 86.25rem;
+  height: 14.813rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 main .section_about_project .text_section h1 {
   color: #1d1e4a;
-  font-size: 65px;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.08rem;
 }
 main .section_about_project .text_section p {
   color: #252525;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
+  line-height: 2rem;
 }
 main .section_about_project .artwork {
-  width: 50rem;
+  width: 48.75rem;
   height: 21.875rem;
-  margin-top: 82.14px;
+  margin-top: 5.134rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
