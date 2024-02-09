@@ -1,4 +1,5 @@
 @import "variables";
+
 @mixin display_flex($x: center, $y: center) {
   display: flex;
   justify-content: $x;
@@ -25,10 +26,17 @@
   }
 }
 
-@mixin text_styles($color: $textColor, $size: 65px, $weigt: lighter) {
+@mixin text_styles($color: $textColor, $size: 4.063rem, $weigt: lighter) {
   color: $color;
   font-size: $size;
   font-weight: $weigt;
+}
+
+@mixin title_text_styles($color: $textColor, $size: 4.063rem, $weigt: lighter) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weigt;
+  line-height: 4.08rem;
 }
 
 @mixin slider-button {
@@ -36,10 +44,10 @@
   height: 5.625rem;
   border-radius: 100%;
   color: #ffffff;
-  background-color: $mainColor;
+  background-color: $hoverColor;
   transition-duration: 0.5s;
   &:hover {
     transition-duration: 0.5s;
-    background-color: $hoverColor;
+    background-color: $mainColor;
   }
 }
