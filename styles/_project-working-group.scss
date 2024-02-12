@@ -1,0 +1,42 @@
+@import "./utils/mixins";
+@import "./utils/reset";
+@import "./utils/variables";
+
+.project-working-group {
+  max-width: 86.25rem;
+  height: 32.438rem;
+  margin: auto;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+
+  .project-working-group-title {
+    @include title-text_styles($titleColor, 3rem, 700);
+  }
+  .project-working-group-cards-section {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    row-gap: 2.5rem;
+    column-gap: 1.25rem;
+    margin-top: 2.5rem;
+
+    .workers-card {
+      max-width: 27.938rem;
+      height: 11.688rem;
+      border: 0.313rem solid $hoverColor;
+      border-radius: 2.5rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      padding-left: 3.125rem;
+
+      h1 {
+        @include text_styles($color: $textColor, $size: 1.5rem, $weigt: 600);
+      }
+      p {
+        @include text_styles($color: $textColor, $size: 1.25rem, $weigt: 600);
+      }
+    }
+  }
+}

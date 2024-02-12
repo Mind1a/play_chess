@@ -3,7 +3,7 @@
 @import "./utils/variables";
 
 .how-to-use-app {
-  width: 86.25rem;
+  max-width: 86.25rem;
   height: 39.125rem;
   margin: auto;
   margin-top: 3.75rem;
@@ -17,12 +17,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-    row-gap: 40px;
-    column-gap: 20px;
-    margin-top: 40px;
+    row-gap: 2.5rem;
+    column-gap: 1.25rem;
+    margin-top: 2.5rem;
 
     .chess-card {
-      width: 42.375rem;
+      max-width: 42.375rem;
       height: 9.188rem;
       display: flex;
 
