@@ -16,16 +16,16 @@
                 <img src="img/logo.svg" alt="Chess Logo SVG">
             </div>
             <nav class="menu">
-                <button class="about_project">
+                <button onclick="goToPage1()" class="about_project active navbtn">
                     პროექტის შესახებ
                 </button>
-                <button class="video">
+                <button onclick="goToPage2()" class="video navbtn">
                     ვიდეო
                 </button>
             </nav>
         </div>
     </header>
-    <main>
+    <main id="page1">
         <section class="section_about_project">
             <div class="text_section">
                 <div>
@@ -122,6 +122,17 @@
                 <div class="swiper-button-next padding-button-next"></div>
             </div>
         </section>
+
+        <section class="download-app">
+            <div class="download-app-conteiner">
+                <h1>ჩამოტვირთე აპლიკაცია</h1>
+                <div class="button-conteiner">
+                    <button class="download-button">ჩამოტვირთე (64 bit)</button>
+                    <button class="download-button">ჩამოტვირთე (32 bit)</button>
+                </div>
+            </div>
+        </section>
+
         <section class="project-working-group">
             <div class="project-working-group-title">
                 <h1>პროექტზე მუშაობდნენ</h1>
@@ -161,6 +172,24 @@
             </div>
         </section>
     </main>
+
+    <div id="page2" class="video-page2">
+        <section class="video-section">
+            <div class="video-conteiner">
+
+            </div>
+        </section>
+        <section class="download-app">
+            <div class="download-app-conteiner">
+                <h1>ჩამოტვირთე აპლიკაცია</h1>
+                <div class="button-conteiner">
+                    <button class="download-button">ჩამოტვირთე (64 bit)</button>
+                    <button class="download-button">ჩამოტვირთე (32 bit)</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <footer>
         <div class="footer-container">
             <p class="footer-text">

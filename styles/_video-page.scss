@@ -1,0 +1,21 @@
+@import "./utils/mixins";
+@import "./utils/reset";
+@import "./utils/variables";
+
+.video-page2 {
+  min-height: 100vh;
+  display: none;
+
+  .video-section {
+    max-width: 86.25rem;
+    height: 41.75rem;
+    background-color: #d9d9d9;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+  }
+  .download-app {
+    margin-bottom: 25rem;
+  }
+}

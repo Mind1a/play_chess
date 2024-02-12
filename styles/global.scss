@@ -5,6 +5,8 @@
 @import "./footer";
 @import "./app-use";
 @import "./project-working-group";
+@import "./download-app";
+@import "./video-page";
 
 header {
   @include display_flex(center, center);
@@ -49,6 +51,9 @@ header {
 
       button {
         @include navigation_font_style();
+      }
+      .active {
+        background-color: $hoverColor;
       }
     }
   }
