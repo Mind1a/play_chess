@@ -1,0 +1,1335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .slider {
+  width: 100%;
+  height: 54.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .slider .swiper {
+  width: 86.25rem;
+  height: 47.25rem;
+  border-radius: 1.875rem;
+  background-color: gray;
+}
+* .slider .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .slider .swiper .swiper-button-prev {
+  margin-left: 2.656rem;
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 100%;
+  color: #ffffff;
+  background-color: #1d1e4a;
+  transition-duration: 0.5s;
+}
+* .slider .swiper .swiper-button-prev:hover {
+  transition-duration: 0.5s;
+  background-color: #9c86cd;
+}
+* .slider .swiper .padding-button-prev {
+  padding-right: 0.5rem;
+}
+* .slider .swiper .padding-button-next {
+  padding-left: 0.5rem;
+}
+* .slider .swiper .swiper-button-next {
+  margin-right: 2.656rem;
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 100%;
+  color: #ffffff;
+  background-color: #1d1e4a;
+  transition-duration: 0.5s;
+}
+* .slider .swiper .swiper-button-next:hover {
+  transition-duration: 0.5s;
+  background-color: #9c86cd;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+footer .footer-container {
+  width: 100%;
+  height: 12.063rem;
+  background-color: #9c86cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container .footer-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 2.04rem;
+}
+footer .footer-container .footer-text span {
+  color: #1d1e4a;
+  font-weight: 600;
+  line-height: 2.04rem;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.how-to-use-app {
+  max-width: 86.25rem;
+  height: 39.125rem;
+  margin: auto;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+.how-to-use-app .how-to-use-app-title {
+  color: #1d1e4a;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.08rem;
+}
+.how-to-use-app .chess-figures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  row-gap: 2.5rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+.how-to-use-app .chess-figures .chess-card {
+  max-width: 42.375rem;
+  height: 9.188rem;
+  display: flex;
+}
+.how-to-use-app .chess-figures .chess-card img {
+  width: 7.188rem;
+  height: 7.188rem;
+  margin-right: 1.25rem;
+}
+.how-to-use-app .chess-figures .chess-card .figure-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.how-to-use-app .chess-figures .chess-card .figure-card-text .figure-title {
+  font-size: 1.75rem;
+  line-height: 38px;
+  color: #252525;
+}
+.how-to-use-app .chess-figures .chess-card .figure-card-text .figur-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #252525;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.project-working-group {
+  max-width: 86.25rem;
+  height: 32.438rem;
+  margin: auto;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+.project-working-group .project-working-group-title {
+  color: #1d1e4a;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.08rem;
+}
+.project-working-group .project-working-group-cards-section {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  row-gap: 2.5rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+.project-working-group .project-working-group-cards-section .workers-card {
+  max-width: 27.938rem;
+  height: 11.688rem;
+  border: 0.313rem solid #1d1e4a;
+  border-radius: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-left: 3.125rem;
+}
+.project-working-group .project-working-group-cards-section .workers-card h1 {
+  color: #252525;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.project-working-group .project-working-group-cards-section .workers-card p {
+  color: #252525;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.download-app {
+  width: 100%;
+}
+.download-app .download-app-conteiner {
+  max-width: 72.25rem;
+  height: 18.063rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3.75rem;
+}
+.download-app .download-app-conteiner h1 {
+  color: #1d1e4a;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.08rem;
+}
+.download-app .download-app-conteiner .button-conteiner {
+  width: 72.25rem;
+  height: 11.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.download-app .download-app-conteiner .button-conteiner .download-button {
+  width: 33.625rem;
+  height: 11.5rem;
+  padding: 0;
+  border: none;
+  background: none;
+  background-color: #9c86cd;
+  border-radius: 2.5rem;
+  transition-duration: 0.5s;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.download-app .download-app-conteiner .button-conteiner .download-button:hover {
+  transition-duration: 0.5s;
+  background-color: #1d1e4a;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.video-page2 {
+  min-height: 100vh;
+  display: none;
+}
+.video-page2 .video-section {
+  max-width: 86.25rem;
+  height: 41.75rem;
+  background-color: #d9d9d9;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+.video-page2 .download-app {
+  margin-bottom: 25rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header_part {
+  max-width: 93.75rem;
+  width: 100%;
+  height: 8.625rem;
+  margin-top: 1.25rem;
+  border-radius: 60px;
+  background-color: #9c86cd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_part .logo {
+  margin-left: 3.75rem;
+}
+header .header_part .menu {
+  width: 35.438rem;
+  height: 4.875rem;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_part .menu .about_project {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 20.688rem;
+  height: 4.875rem;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+header .header_part .menu .about_project:hover {
+  transition-duration: 0.5s;
+  background-color: #1d1e4a;
+}
+header .header_part .menu .video {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 9.75rem;
+  height: 4.875rem;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+header .header_part .menu .video:hover {
+  transition-duration: 0.5s;
+  background-color: #1d1e4a;
+}
+header .header_part .menu button {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+header .header_part .menu .active {
+  background-color: #1d1e4a;
+}
+
+main {
+  min-height: 100vh;
+}
+main .section_about_project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 113.687rem;
+  width: 100%;
+  margin: auto;
+  height: 43.678rem;
+  margin-top: 3.75rem;
+}
+main .section_about_project .text_section {
+  max-width: 86.25rem;
+  height: 14.813rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .section_about_project .text_section h1 {
+  color: #1d1e4a;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.08rem;
+}
+main .section_about_project .text_section p {
+  color: #252525;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+main .section_about_project .artwork {
+  width: 48.75rem;
+  height: 21.875rem;
+  margin-top: 5.134rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=global.css.map */

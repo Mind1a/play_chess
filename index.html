@@ -4,11 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
     <title>Play Chess</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <h1>Play Chess</h1>
+    <header>
+        <div class="header_part">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Chess Logo SVG">
+            </div>
+            <nav class="menu">
+                <button onclick="goToPage1()" class="about_project active navbtn">
+                    პროექტის შესახებ
+                </button>
+                <button onclick="goToPage2()" class="video navbtn">
+                    ვიდეო
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main id="page1">
+        <section class="section_about_project">
+            <div class="text_section">
+                <div>
+                    <h1>პროექტის შესახებ</h1>
+                </div>
+                <div>
+                    <p>
+                        (ვებსაიტის სახელი) სპეციალურად შექმნილია იმისათვის, რომ ბავშვებს გააცნოს ჭადრაკის მომხიბლავი
+                        სამყარო
+                        სახალისო, საინტერესო და საგანმანათლებლო გზით. ჩვენ გვჯერა, რომ ჭადრაკი უფრო მეტია, ვიდრე უბრალოდ
+                        თამაში; ეს ინსტრუმენტია კრიტიკული აზროვნების, პრობლემების გადაჭრის უნარებისა და სტრატეგიული
+                        დაგეგმვის გასაუმჯობესებლად.
+                    </p>
+                </div>
+            </div>
+            <div class="artwork">
+                <img src="img/Untitled-Artwork (1) 1.svg" alt="girl playing chess">
+                <img src="img/Untitled-Artwork 1.svg" alt="boy playing chess">
+            </div>
+        </section>
+
+        <section class="how-to-use-app">
+            <div class="how-to-use-app-title">
+                <h1>როგორ გამოვიყენოთ აპლიკაცია</h1>
+            </div>
+            <div class="chess-figures">
+                <div class="chess-card">
+                    <img src="img/Chess Pieces (1).svg" alt="Chess Figure Pawn">
+                    <div class="figure-card-text">
+                        <h1 class="figure-title">პაიკი</h1>
+                        <p class="figur-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, non
+                            aperiam? Aliquam eius quam suscipit sunt beatae! Officia nulla quas, totam ipsam quam</p>
+                    </div>
+                </div>
+                <div class="chess-card">
+                    <img src="img/Chess Pieces (2).svg" alt="Chess Figure Pawn">
+                    <div class="figure-card-text">
+                        <h1 class="figure-title">ეტლი</h1>
+                        <p class="figur-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, non
+                            aperiam? Aliquam eius quam suscipit sunt beatae! Officia nulla quas, totam ipsam quam</p>
+                    </div>
+                </div>
+                <div class="chess-card">
+                    <img src="img/Chess Pieces (3).svg" alt="Chess Figure Pawn">
+                    <div class="figure-card-text">
+                        <h1 class="figure-title">მხედარი</h1>
+                        <p class="figur-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, non
+                            aperiam? Aliquam eius quam suscipit sunt beatae! Officia nulla quas, totam ipsam quam</p>
+                    </div>
+                </div>
+                <div class="chess-card">
+                    <img src="img/Chess Pieces (4).svg" alt="Chess Figure Pawn">
+                    <div class="figure-card-text">
+                        <h1 class="figure-title">კუ</h1>
+                        <p class="figur-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, non
+                            aperiam? Aliquam eius quam suscipit sunt beatae! Officia nulla quas, totam ipsam quam</p>
+                    </div>
+                </div>
+                <div class="chess-card">
+                    <img src="img/Chess Pieces (5).svg" alt="Chess Figure Pawn">
+                    <div class="figure-card-text">
+                        <h1 class="figure-title">ლაზიერი</h1>
+                        <p class="figur-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, non
+                            aperiam? Aliquam eius quam suscipit sunt beatae! Officia nulla quas, totam ipsam quam</p>
+                    </div>
+                </div>
+                <div class="chess-card">
+                    <img src="img/Chess Pieces (6).svg" alt="Chess Figure Pawn">
+                    <div class="figure-card-text">
+                        <h1 class="figure-title">მეფე</h1>
+                        <p class="figur-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, non
+                            aperiam? Aliquam eius quam suscipit sunt beatae! Officia nulla quas, totam ipsam quam
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+
+                    ...
+                </div>
+                <div class="swiper-button-prev padding-button-prev"></div>
+                <div class="swiper-button-next padding-button-next"></div>
+            </div>
+        </section>
+
+        <section class="download-app">
+            <div class="download-app-conteiner">
+                <h1>ჩამოტვირთე აპლიკაცია</h1>
+                <div class="button-conteiner">
+                    <button class="download-button">ჩამოტვირთე (64 bit)</button>
+                    <button class="download-button">ჩამოტვირთე (32 bit)</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-working-group">
+            <div class="project-working-group-title">
+                <h1>პროექტზე მუშაობდნენ</h1>
+            </div>
+            <div class="project-working-group-cards-section">
+                <div class="workers-card">
+                    <h1>სახელი გვარი</h1>
+                    <p>პოზიცია</p>
+                    <p>linkedin</p>
+                </div>
+                <div class="workers-card">
+                    <h1>სახელი გვარი</h1>
+                    <p>პოზიცია</p>
+                    <p>linkedin</p>
+                </div>
+                <div class="workers-card">
+                    <h1>სახელი გვარი</h1>
+                    <p>პოზიცია</p>
+                    <p>linkedin</p>
+                </div>
+                <div class="workers-card">
+                    <h1>სახელი გვარი</h1>
+                    <p>პოზიცია</p>
+                    <p>linkedin</p>
+                </div>
+                <div class="workers-card">
+                    <h1>სახელი გვარი</h1>
+                    <p>პოზიცია</p>
+                    <p>linkedin</p>
+                </div>
+                <div class="workers-card">
+                    <h1>სახელი გვარი</h1>
+                    <p>პოზიცია</p>
+                    <p>linkedin</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="page2" class="video-page2">
+        <section class="video-section">
+            <div class="video-conteiner">
+
+            </div>
+        </section>
+        <section class="download-app">
+            <div class="download-app-conteiner">
+                <h1>ჩამოტვირთე აპლიკაცია</h1>
+                <div class="button-conteiner">
+                    <button class="download-button">ჩამოტვირთე (64 bit)</button>
+                    <button class="download-button">ჩამოტვირთე (32 bit)</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">
+                საიტზე მუშაობდა <span>უნილაბის</span> გუნდი
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
