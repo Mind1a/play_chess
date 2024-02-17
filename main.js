@@ -13,17 +13,36 @@ const swiper = new Swiper(".swiper", {
 });
 
 // ----------navbar-pages-------
+
 function goToPage2() {
-  document.getElementById("page1").style.display = "none";
-  document.getElementById("page2").style.display = "block";
+  var page1 = document.getElementById("page1");
+  var page2 = document.getElementById("page2");
+  var video = document.getElementById("video1");
+
+  page1.style.display = "none";
+  page2.style.display = "block";
+
+  if (!video.paused && video.currentTime > 0 && !video.ended) {
+    video.play();
+  } else {
+    video.pause();
+  }
 }
 
+// Function to switch to page 1
 function goToPage1() {
-  document.getElementById("page1").style.display = "block";
-  document.getElementById("page2").style.display = "none";
+  var page1 = document.getElementById("page1");
+  var page2 = document.getElementById("page2");
+  var video = document.getElementById("video1");
+
+  page2.style.display = "none";
+  page1.style.display = "block";
+
+  video.pause();
 }
 
 // ----------navbar-hovers------
+
 document.addEventListener("DOMContentLoaded", function () {
   const navButtons = document.querySelectorAll(".navbtn");
   navButtons.forEach((button) => {
