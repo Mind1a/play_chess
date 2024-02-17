@@ -16,10 +16,21 @@
       width: 86.25rem;
       height: 47.25rem;
       border-radius: 1.875rem;
-      background-color: gray;
 
-      .swiper-slide {
-        @include display_flex();
+      .swiper-wrapper {
+        .swiper-slide {
+          @include display_flex();
+          position: relative;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
       }
       .swiper-button-prev {
         margin-left: 2.656rem;
