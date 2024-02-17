@@ -298,12 +298,21 @@ table {
   width: 86.25rem;
   height: 47.25rem;
   border-radius: 1.875rem;
-  background-color: gray;
 }
-* .slider .swiper .swiper-slide {
+* .slider .swiper .swiper-wrapper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+* .slider .swiper .swiper-wrapper .swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 * .slider .swiper .swiper-button-prev {
   margin-left: 2.656rem;
@@ -1020,6 +1029,7 @@ table {
 
 .download-app {
   width: 100%;
+  margin: auto;
 }
 .download-app .download-app-conteiner {
   max-width: 72.25rem;
@@ -1212,14 +1222,206 @@ table {
 .video-page2 .video-section {
   max-width: 86.25rem;
   height: 41.75rem;
-  background-color: #d9d9d9;
   border-radius: 1rem;
   margin: auto;
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
+  position: relative;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
 }
-.video-page2 .download-app {
-  margin-bottom: 25rem;
+.video-page2 .video-section .demo-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.video-page2 .video-page-download {
+  max-width: 1578.71px;
+  height: 39.297rem;
+  width: 100%;
+  margin: auto;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main .section_about_project {
+  position: relative;
+}
+main .section_about_project .chess-figure .chess-figure-group-left {
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  z-index: -1;
+}
+main .section_about_project .chess-figure .chess-figure-group-rigt {
+  position: absolute;
+  bottom: 2.063rem;
+  right: 0rem;
+  z-index: -1;
+}
+main .section_about_project .chess-figure .chess-figure {
+  position: absolute;
+  top: 0rem;
+  left: 1.688rem;
+  z-index: -1;
+}
+
+.video-page2 .video-page-download {
+  position: relative;
+  margin-bottom: 3.75rem;
+}
+.video-page2 .video-page-download .video-page-chess-figure-group-left {
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  z-index: -1;
+}
+.video-page2 .video-page-download .video-page-chess-figure-group-rigt {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  z-index: -1;
 }
 
 header {
@@ -1300,10 +1502,10 @@ main .section_about_project {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 113.687rem;
+  max-width: 1578.99px;
   width: 100%;
   margin: auto;
-  height: 43.678rem;
+  height: 43.75rem;
   margin-top: 3.75rem;
 }
 main .section_about_project .text_section {
@@ -1312,6 +1514,7 @@ main .section_about_project .text_section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 57px;
 }
 main .section_about_project .text_section h1 {
   color: #1d1e4a;
@@ -1328,7 +1531,7 @@ main .section_about_project .text_section p {
 main .section_about_project .artwork {
   width: 48.75rem;
   height: 21.875rem;
-  margin-top: 5.134rem;
+  margin-top: 3.125rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
