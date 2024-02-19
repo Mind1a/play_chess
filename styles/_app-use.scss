@@ -1,5 +1,5 @@
 @import "./utils/mixins";
-@import "./utils/reset";
+// @import "./utils/reset";
 @import "./utils/variables";
 
 .how-to-use-app {
@@ -11,6 +11,8 @@
 
   .how-to-use-app-title {
     @include title-text_styles($titleColor, 3rem, 700);
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 
   .chess-figures {
@@ -20,6 +22,8 @@
     row-gap: 2.5rem;
     column-gap: 1.25rem;
     margin-top: 2.5rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
 
     .chess-card {
       max-width: 42.375rem;

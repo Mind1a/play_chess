@@ -1,5 +1,5 @@
 @import "./utils/mixins";
-@import "./utils/reset";
+// @import "./utils/reset";
 @import "./utils/variables";
 
 .download-app {
@@ -12,7 +12,7 @@
     margin: auto;
     @include display_flex(space-between);
     flex-direction: column;
-    margin-bottom: 3.75rem;
+    margin-top: 3.75rem;
 
     h1 {
       @include title-text_styles($titleColor, 3rem, 700);
