@@ -4,18 +4,15 @@
 .video-page2 {
   min-height: 100vh;
   display: none;
+  margin-top: 3.75rem;
 
   .video-section {
     max-width: 86.25rem;
     height: 41.75rem;
     border-radius: 1rem;
     margin: auto;
-    margin-top: 3.75rem;
-    margin-bottom: 3.75rem;
     position: relative;
     overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
 
     .demo-video {
       position: absolute;
@@ -26,7 +23,7 @@
     }
   }
 }
-.video-page-download {
+.download-app-page2 {
   .download-app-conteiner {
     max-width: 72.25rem;
     height: 18.063rem;
