@@ -1,0 +1,14 @@
+@import "./utils/mixins";
+// @import "./utils/reset";
+@import "./utils/variables";
+
+.download-app {
+  @media screen and (max-width: $macbook) {
+    display: none;
+  }
+}
+.video-page-download {
+  @media screen and (max-width: $macbook) {
+    display: none;
+  }
+}

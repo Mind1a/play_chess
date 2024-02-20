@@ -1,5 +1,5 @@
 @import "./utils/mixins";
-@import "./utils/reset";
+// @import "./utils/reset";
 @import "./utils/variables";
 
 main {
@@ -28,21 +28,26 @@ main {
   }
 }
 
-.video-page2 {
+.download-app-page2 {
+  max-width: 1578.71px;
+  height: 39.297rem;
+  margin: auto;
+  position: relative;
+
   .video-page-download {
     position: relative;
     margin-bottom: 3.75rem;
-    .video-page-chess-figure-group-left {
-      position: absolute;
-      bottom: 0rem;
-      left: 0rem;
-      z-index: -1;
-    }
-    .video-page-chess-figure-group-rigt {
-      position: absolute;
-      bottom: 0rem;
-      right: 0rem;
-      z-index: -1;
-    }
+  }
+  .video-page-chess-figure-group-left {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    z-index: -1;
+  }
+  .video-page-chess-figure-group-rigt {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    z-index: -1;
   }
 }

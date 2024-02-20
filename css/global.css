@@ -100,148 +100,7 @@ video {
   text-decoration: none;
 }
 
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-*,
-*::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-
+/* HTML5 display-role reset for older browsers article,*/
 aside,
 details,
 figcaption,
@@ -289,10 +148,13 @@ table {
 }
 * .slider {
   width: 100%;
-  height: 54.75rem;
+  height: 47.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3.75rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
 * .slider .swiper {
   width: 86.25rem;
@@ -347,148 +209,6 @@ table {
   background-color: #9c86cd;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-*,
-*::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 footer .footer-container {
   width: 100%;
   height: 12.063rem;
@@ -509,148 +229,6 @@ footer .footer-container .footer-text span {
   line-height: 2.04rem;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-*,
-*::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 .how-to-use-app {
   max-width: 86.25rem;
   height: 39.125rem;
@@ -663,6 +241,8 @@ table {
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.08rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
 .how-to-use-app .chess-figures {
   display: grid;
@@ -672,6 +252,8 @@ table {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
   margin-top: 2.5rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
 .how-to-use-app .chess-figures .chess-card {
   max-width: 42.375rem;
@@ -699,150 +281,8 @@ table {
   color: #252525;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-*,
-*::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 .project-working-group {
-  max-width: 86.25rem;
+  max-width: 1380px;
   height: 32.438rem;
   margin: auto;
   margin-top: 3.75rem;
@@ -853,6 +293,8 @@ table {
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.08rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
 .project-working-group .project-working-group-cards-section {
   margin-top: 2.5rem;
@@ -863,6 +305,8 @@ table {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
   margin-top: 2.5rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
 .project-working-group .project-working-group-cards-section .workers-card {
   max-width: 27.938rem;
@@ -885,148 +329,6 @@ table {
   font-weight: 600;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-*,
-*::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 .download-app {
   width: 100%;
   margin: auto;
@@ -1039,7 +341,7 @@ table {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 3.75rem;
+  margin-top: 3.75rem;
 }
 .download-app .download-app-conteiner h1 {
   color: #1d1e4a;
@@ -1073,148 +375,6 @@ table {
   background-color: #1d1e4a;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-*,
-*::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 .video-page2 {
   min-height: 100vh;
   display: none;
@@ -1235,154 +395,50 @@ table {
   position: absolute;
   width: 100%;
   height: 100%;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
-.video-page2 .video-page-download {
-  max-width: 1578.71px;
-  height: 39.297rem;
-  width: 100%;
+
+.video-page-download .download-app-conteiner {
+  max-width: 72.25rem;
+  height: 18.063rem;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3.75rem;
 }
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-*,
-*::before,
-::after {
-  margin: 0;
+.video-page-download .download-app-conteiner h1 {
+  color: #1d1e4a;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.08rem;
+}
+.video-page-download .download-app-conteiner .button-conteiner {
+  width: 72.25rem;
+  height: 11.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.video-page-download .download-app-conteiner .button-conteiner .download-button {
+  width: 33.625rem;
+  height: 11.5rem;
   padding: 0;
-  box-sizing: border-box;
+  border: none;
+  background: none;
+  background-color: #9c86cd;
+  border-radius: 2.5rem;
+  transition-duration: 0.5s;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
 }
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.video-page-download .download-app-conteiner .button-conteiner .download-button:hover {
+  transition-duration: 0.5s;
+  background-color: #1d1e4a;
 }
 
 main .section_about_project {
@@ -1407,21 +463,39 @@ main .section_about_project .chess-figure .chess-figure {
   z-index: -1;
 }
 
-.video-page2 .video-page-download {
+.download-app-page2 {
+  max-width: 1578.71px;
+  height: 39.297rem;
+  margin: auto;
+  position: relative;
+}
+.download-app-page2 .video-page-download {
   position: relative;
   margin-bottom: 3.75rem;
 }
-.video-page2 .video-page-download .video-page-chess-figure-group-left {
+.download-app-page2 .video-page-chess-figure-group-left {
   position: absolute;
   bottom: 0rem;
   left: 0rem;
   z-index: -1;
 }
-.video-page2 .video-page-download .video-page-chess-figure-group-rigt {
+.download-app-page2 .video-page-chess-figure-group-rigt {
   position: absolute;
   bottom: 0rem;
   right: 0rem;
   z-index: -1;
+}
+
+@media screen and (max-width: 80rem) {
+  .download-app {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 80rem) {
+  .video-page-download {
+    display: none;
+  }
 }
 
 header {
@@ -1505,12 +579,14 @@ main .section_about_project {
   max-width: 1578.99px;
   width: 100%;
   margin: auto;
-  height: 43.75rem;
+  height: 53.991rem;
   margin-top: 3.75rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
 main .section_about_project .text_section {
   max-width: 86.25rem;
-  height: 14.813rem;
+  height: 25.125rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1521,6 +597,7 @@ main .section_about_project .text_section h1 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.08rem;
+  line-height: 4rem;
 }
 main .section_about_project .text_section p {
   color: #252525;

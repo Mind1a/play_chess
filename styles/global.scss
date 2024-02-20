@@ -7,7 +7,8 @@
 @import "./project-working-group";
 @import "./download-app";
 @import "./video-page";
-@import "./chess-figures";
+@import "./background";
+@import "./responsiv";
 
 header {
   @include display_flex(center, center);
@@ -69,12 +70,14 @@ main {
     max-width: 1578.99px;
     width: 100%;
     margin: auto;
-    height: 43.75rem;
+    height: 53.991rem;
     margin-top: 3.75rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
 
     .text_section {
       max-width: 86.25rem;
-      height: 14.813rem;
+      height: 25.125rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -82,6 +85,7 @@ main {
 
       h1 {
         @include title-text_styles($titleColor, 3rem, 700);
+        line-height: 4rem;
       }
       p {
         @include text_styles($textColor, 1.5rem, 400);
