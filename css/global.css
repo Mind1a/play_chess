@@ -230,21 +230,25 @@ footer .footer-container .footer-text span {
 }
 
 .how-to-use-app {
+  width: 100%;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.how-to-use-app .how-to-use-app-childe {
   max-width: 86.25rem;
   height: 39.125rem;
   margin: auto;
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
 }
-.how-to-use-app .how-to-use-app-title {
+.how-to-use-app .how-to-use-app-childe .how-to-use-app-title {
   color: #1d1e4a;
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.08rem;
-  padding-left: 3.75rem;
-  padding-right: 3.75rem;
 }
-.how-to-use-app .chess-figures {
+.how-to-use-app .how-to-use-app-childe .chess-figures {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
@@ -252,51 +256,53 @@ footer .footer-container .footer-text span {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
   margin-top: 2.5rem;
-  padding-left: 3.75rem;
-  padding-right: 3.75rem;
 }
-.how-to-use-app .chess-figures .chess-card {
+.how-to-use-app .how-to-use-app-childe .chess-figures .chess-card {
   max-width: 42.375rem;
   height: 9.188rem;
   display: flex;
 }
-.how-to-use-app .chess-figures .chess-card img {
+.how-to-use-app .how-to-use-app-childe .chess-figures .chess-card img {
   width: 7.188rem;
   height: 7.188rem;
   margin-right: 1.25rem;
 }
-.how-to-use-app .chess-figures .chess-card .figure-card-text {
+.how-to-use-app .how-to-use-app-childe .chess-figures .chess-card .figure-card-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.how-to-use-app .chess-figures .chess-card .figure-card-text .figure-title {
+.how-to-use-app .how-to-use-app-childe .chess-figures .chess-card .figure-card-text .figure-title {
   font-size: 1.75rem;
   line-height: 38px;
   color: #252525;
 }
-.how-to-use-app .chess-figures .chess-card .figure-card-text .figur-text {
+.how-to-use-app .how-to-use-app-childe .chess-figures .chess-card .figure-card-text .figur-text {
   font-size: 1.5rem;
   line-height: 2rem;
   color: #252525;
 }
 
-.project-working-group {
+.project-working-group-main {
+  width: 100%;
+  margin: auto;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+}
+.project-working-group-main .project-working-group {
   max-width: 1380px;
   height: 32.438rem;
   margin: auto;
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
 }
-.project-working-group .project-working-group-title {
+.project-working-group-main .project-working-group .project-working-group-title {
   color: #1d1e4a;
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.08rem;
-  padding-left: 3.75rem;
-  padding-right: 3.75rem;
 }
-.project-working-group .project-working-group-cards-section {
+.project-working-group-main .project-working-group .project-working-group-cards-section {
   margin-top: 2.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -305,10 +311,8 @@ footer .footer-container .footer-text span {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
   margin-top: 2.5rem;
-  padding-left: 3.75rem;
-  padding-right: 3.75rem;
 }
-.project-working-group .project-working-group-cards-section .workers-card {
+.project-working-group-main .project-working-group .project-working-group-cards-section .workers-card {
   max-width: 27.938rem;
   height: 11.688rem;
   border: 0.313rem solid #1d1e4a;
@@ -318,12 +322,12 @@ footer .footer-container .footer-text span {
   flex-direction: column;
   padding-left: 3.125rem;
 }
-.project-working-group .project-working-group-cards-section .workers-card h1 {
+.project-working-group-main .project-working-group .project-working-group-cards-section .workers-card h1 {
   color: #252525;
   font-size: 1.5rem;
   font-weight: 600;
 }
-.project-working-group .project-working-group-cards-section .workers-card p {
+.project-working-group-main .project-working-group .project-working-group-cards-section .workers-card p {
   color: #252525;
   font-size: 1.25rem;
   font-weight: 600;
@@ -378,18 +382,15 @@ footer .footer-container .footer-text span {
 .video-page2 {
   min-height: 100vh;
   display: none;
+  margin-top: 3.75rem;
 }
 .video-page2 .video-section {
   max-width: 86.25rem;
   height: 41.75rem;
   border-radius: 1rem;
   margin: auto;
-  margin-top: 3.75rem;
-  margin-bottom: 3.75rem;
   position: relative;
   overflow: hidden;
-  margin-right: auto;
-  margin-left: auto;
 }
 .video-page2 .video-section .demo-video {
   position: absolute;
@@ -399,7 +400,7 @@ footer .footer-container .footer-text span {
   padding-right: 3.75rem;
 }
 
-.video-page-download .download-app-conteiner {
+.download-app-page2 .download-app-conteiner {
   max-width: 72.25rem;
   height: 18.063rem;
   margin: auto;
@@ -409,20 +410,20 @@ footer .footer-container .footer-text span {
   flex-direction: column;
   margin-top: 3.75rem;
 }
-.video-page-download .download-app-conteiner h1 {
+.download-app-page2 .download-app-conteiner h1 {
   color: #1d1e4a;
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.08rem;
 }
-.video-page-download .download-app-conteiner .button-conteiner {
+.download-app-page2 .download-app-conteiner .button-conteiner {
   width: 72.25rem;
   height: 11.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.video-page-download .download-app-conteiner .button-conteiner .download-button {
+.download-app-page2 .download-app-conteiner .button-conteiner .download-button {
   width: 33.625rem;
   height: 11.5rem;
   padding: 0;
@@ -436,7 +437,7 @@ footer .footer-container .footer-text span {
   font-weight: 600;
   cursor: pointer;
 }
-.video-page-download .download-app-conteiner .button-conteiner .download-button:hover {
+.download-app-page2 .download-app-conteiner .button-conteiner .download-button:hover {
   transition-duration: 0.5s;
   background-color: #1d1e4a;
 }
@@ -495,6 +496,33 @@ main .section_about_project .chess-figure .chess-figure {
 @media screen and (max-width: 80rem) {
   .video-page-download {
     display: none;
+  }
+}
+
+@media screen and (max-width: 80rem) {
+  .download-app-page2 {
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 80rem) {
+  .demo-video {
+    max-width: 1000px;
+    max-height: 407px;
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 80rem) {
+  .video-section {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 80rem) {
+  .video-page2 {
+    margin-top: 0rem;
   }
 }
 

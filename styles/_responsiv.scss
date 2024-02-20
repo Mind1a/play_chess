@@ -12,3 +12,28 @@
     display: none;
   }
 }
+.download-app-page2 {
+  @media screen and (max-width: $macbook) {
+    height: 10rem;
+  }
+}
+.demo-video {
+  @media screen and (max-width: $macbook) {
+    max-width: 1000px;
+    max-height: 407px;
+    margin-top: 2.5rem;
+  }
+}
+
+.video-section {
+  @media screen and (max-width: $macbook) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.video-page2 {
+  @media screen and (max-width: $macbook) {
+    margin-top: 0rem;
+  }
+}

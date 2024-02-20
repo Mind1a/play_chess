@@ -3,54 +3,57 @@
 @import "./utils/variables";
 
 .how-to-use-app {
-  max-width: 86.25rem;
-  height: 39.125rem;
+  width: 100%;
   margin: auto;
-  margin-top: 3.75rem;
-  margin-bottom: 3.75rem;
+  padding-left: 60px;
+  padding-right: 60px;
 
-  .how-to-use-app-title {
-    @include title-text_styles($titleColor, 3rem, 700);
-    padding-left: 3.75rem;
-    padding-right: 3.75rem;
-  }
+  .how-to-use-app-childe {
+    max-width: 86.25rem;
+    height: 39.125rem;
+    margin: auto;
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
 
-  .chess-figures {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    row-gap: 2.5rem;
-    column-gap: 1.25rem;
-    margin-top: 2.5rem;
-    padding-left: 3.75rem;
-    padding-right: 3.75rem;
+    .how-to-use-app-title {
+      @include title-text_styles($titleColor, 3rem, 700);
+    }
 
-    .chess-card {
-      max-width: 42.375rem;
-      height: 9.188rem;
-      display: flex;
+    .chess-figures {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+      row-gap: 2.5rem;
+      column-gap: 1.25rem;
+      margin-top: 2.5rem;
 
-      img {
-        width: 7.188rem;
-        height: 7.188rem;
-        margin-right: 1.25rem;
-      }
-
-      .figure-card-text {
+      .chess-card {
+        max-width: 42.375rem;
+        height: 9.188rem;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
-        .figure-title {
-          font-size: 1.75rem;
-          line-height: 38px;
-          color: $textColor;
+        img {
+          width: 7.188rem;
+          height: 7.188rem;
+          margin-right: 1.25rem;
         }
 
-        .figur-text {
-          font-size: 1.5rem;
-          line-height: 2rem;
-          color: $textColor;
+        .figure-card-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .figure-title {
+            font-size: 1.75rem;
+            line-height: 38px;
+            color: $textColor;
+          }
+
+          .figur-text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: $textColor;
+          }
         }
       }
     }
