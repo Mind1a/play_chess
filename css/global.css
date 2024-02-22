@@ -238,7 +238,7 @@ footer .footer-container .footer-text span {
 }
 .how-to-use-app .how-to-use-app-childe {
   max-width: 86.25rem;
-  height: 39.125rem;
+  min-height: 39.125rem;
   margin: auto;
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
@@ -251,7 +251,7 @@ footer .footer-container .footer-text span {
 }
 .how-to-use-app .how-to-use-app-childe .chess-figures {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: auto;
   row-gap: 2.5rem;
   -moz-column-gap: 1.25rem;
@@ -259,8 +259,8 @@ footer .footer-container .footer-text span {
   margin-top: 2.5rem;
 }
 .how-to-use-app .how-to-use-app-childe .chess-figures .chess-card {
-  max-width: 42.375rem;
-  height: 9.188rem;
+  max-width: auto;
+  min-height: 9.188rem;
   display: flex;
 }
 .how-to-use-app .how-to-use-app-childe .chess-figures .chess-card img {
@@ -279,7 +279,7 @@ footer .footer-container .footer-text span {
   color: #252525;
 }
 .how-to-use-app .how-to-use-app-childe .chess-figures .chess-card .figure-card-text .figur-text {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2rem;
   color: #252525;
 }
@@ -338,6 +338,11 @@ footer .footer-container .footer-text span {
   width: 100%;
   margin: auto;
 }
+@media screen and (max-width: 80rem) {
+  .download-app {
+    display: none;
+  }
+}
 .download-app .download-app-conteiner {
   max-width: 72.25rem;
   height: 18.063rem;
@@ -381,9 +386,13 @@ footer .footer-container .footer-text span {
 }
 
 .video-page2 {
-  min-height: 100vh;
-  display: none;
   margin-top: 3.75rem;
+  display: none;
+}
+@media screen and (max-width: 80rem) {
+  .video-page2 {
+    margin-top: 0rem;
+  }
 }
 .video-page2 .video-section {
   max-width: 86.25rem;
@@ -391,7 +400,13 @@ footer .footer-container .footer-text span {
   border-radius: 1rem;
   margin: auto;
   position: relative;
-  overflow: hidden;
+}
+@media screen and (max-width: 80rem) {
+  .video-page2 .video-section {
+    display: flex;
+    justify-content: center;
+    height: 28rem;
+  }
 }
 .video-page2 .video-section .demo-video {
   position: absolute;
@@ -400,8 +415,37 @@ footer .footer-container .footer-text span {
   padding-left: 3.75rem;
   padding-right: 3.75rem;
 }
+@media screen and (max-width: 80rem) {
+  .video-page2 .video-section .demo-video {
+    max-width: 1000px;
+    max-height: 407px;
+    margin-top: 2.5rem;
+  }
+}
 
-.download-app-page2 .download-app-conteiner {
+.download-app-page2 {
+  max-width: 1280px;
+  height: 39.297rem;
+  margin: auto;
+  background-image: url(/img/chess-figure-group-left.svg), url(/img/chess-figure-group-right.svg);
+  background-repeat: no-repeat;
+  background-position: left 30px bottom, right 30px bottom;
+}
+@media screen and (max-width: 80rem) {
+  .download-app-page2 {
+    height: 21.5rem;
+    max-width: 1200px;
+  }
+}
+.download-app-page2 .video-page-download {
+  margin-bottom: 3.75rem;
+}
+@media screen and (max-width: 80rem) {
+  .download-app-page2 .video-page-download {
+    display: none;
+  }
+}
+.download-app-page2 .video-page-download .download-app-conteiner {
   max-width: 72.25rem;
   height: 18.063rem;
   margin: auto;
@@ -411,20 +455,20 @@ footer .footer-container .footer-text span {
   flex-direction: column;
   margin-top: 3.75rem;
 }
-.download-app-page2 .download-app-conteiner h1 {
+.download-app-page2 .video-page-download .download-app-conteiner h1 {
   color: #1d1e4a;
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.08rem;
 }
-.download-app-page2 .download-app-conteiner .button-conteiner {
+.download-app-page2 .video-page-download .download-app-conteiner .button-conteiner {
   width: 72.25rem;
   height: 11.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.download-app-page2 .download-app-conteiner .button-conteiner .download-button {
+.download-app-page2 .video-page-download .download-app-conteiner .button-conteiner .download-button {
   width: 33.625rem;
   height: 11.5rem;
   padding: 0;
@@ -436,101 +480,63 @@ footer .footer-container .footer-text span {
   color: #ffffff;
   font-size: 2rem;
   font-weight: 600;
-  cursor: pointer;
 }
-.download-app-page2 .download-app-conteiner .button-conteiner .download-button:hover {
+.download-app-page2 .video-page-download .download-app-conteiner .button-conteiner .download-button:hover {
   transition-duration: 0.5s;
   background-color: #1d1e4a;
 }
 
-main .section_about_project {
-  position: relative;
-}
-main .section_about_project .chess-figure .chess-figure-group-left {
-  position: absolute;
-  bottom: 0rem;
-  left: 0rem;
-  z-index: -1;
-}
-main .section_about_project .chess-figure .chess-figure-group-rigt {
-  position: absolute;
-  bottom: 2.063rem;
-  right: 0rem;
-  z-index: -1;
-}
-main .section_about_project .chess-figure .chess-figure {
-  position: absolute;
-  top: 0rem;
-  left: 1.688rem;
-  z-index: -1;
-}
-
-.download-app-page2 {
-  max-width: 1578.71px;
-  height: 39.297rem;
+.section_about_project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1500.99px;
   margin: auto;
-  position: relative;
+  height: 53.991rem;
+  margin-top: 3.75rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+  background-image: url(/img/chess-figure-group-left.svg), url(/img/chess-figure-group-right.svg), url(/img/chess-figure.svg);
+  background-repeat: no-repeat;
+  background-position: left 30px bottom, right 30px bottom, left 38px top 20px;
 }
-.download-app-page2 .video-page-download {
-  position: relative;
-  margin-bottom: 3.75rem;
+.section_about_project .text_section {
+  max-width: 86.25rem;
+  height: 25.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 57px;
 }
-.download-app-page2 .video-page-chess-figure-group-left {
-  position: absolute;
-  bottom: 0rem;
-  left: 0rem;
-  z-index: -1;
+.section_about_project .text_section h1 {
+  color: #1d1e4a;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.08rem;
+  line-height: 4rem;
 }
-.download-app-page2 .video-page-chess-figure-group-rigt {
-  position: absolute;
-  bottom: 0rem;
-  right: 0rem;
-  z-index: -1;
+.section_about_project .text_section p {
+  color: #252525;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
 }
-
-@media screen and (max-width: 80rem) {
-  .download-app {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 80rem) {
-  .video-page-download {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 80rem) {
-  .download-app-page2 {
-    height: 10rem;
-  }
-}
-
-@media screen and (max-width: 80rem) {
-  .demo-video {
-    max-width: 1000px;
-    max-height: 407px;
-    margin-top: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 80rem) {
-  .video-section {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 80rem) {
-  .video-page2 {
-    margin-top: 0rem;
-  }
+.section_about_project .artwork {
+  width: 48.75rem;
+  height: 21.875rem;
+  margin-top: 3.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 header .header_part {
   max-width: 93.75rem;
@@ -598,47 +604,5 @@ header .header_part .menu .active {
 }
 
 main {
-  min-height: 100vh;
-}
-main .section_about_project {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 1578.99px;
-  width: 100%;
-  margin: auto;
-  height: 53.991rem;
-  margin-top: 3.75rem;
-  padding-left: 3.75rem;
-  padding-right: 3.75rem;
-}
-main .section_about_project .text_section {
-  max-width: 86.25rem;
-  height: 25.125rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 57px;
-}
-main .section_about_project .text_section h1 {
-  color: #1d1e4a;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 4.08rem;
-  line-height: 4rem;
-}
-main .section_about_project .text_section p {
-  color: #252525;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2rem;
-}
-main .section_about_project .artwork {
-  width: 48.75rem;
-  height: 21.875rem;
-  margin-top: 3.125rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  min-height: calc(100vh - 351px);
 }/*# sourceMappingURL=global.css.map */

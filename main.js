@@ -21,12 +21,6 @@ function goToPage2() {
 
   page1.style.display = "none";
   page2.style.display = "block";
-
-  if (!video.paused && video.currentTime > 0 && !video.ended) {
-    video.play();
-  } else {
-    video.pause();
-  }
 }
 
 // Function to switch to page 1
