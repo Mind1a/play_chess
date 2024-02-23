@@ -10,19 +10,68 @@ header {
     max-width: 93.75rem;
     width: 100%;
     height: 8.625rem;
-    margin-top: 1.25rem;
     border-radius: 60px;
+    margin-top: 1rem;
     background-color: $mainColor;
     @include display_flex(space-between, center);
 
+    @media screen and (max-width: $macbook) {
+      max-width: 68.75rem;
+      width: 100%;
+      height: 6.563rem;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 46.5rem;
+      width: 100%;
+      height: 4.188rem;
+      margin-top: 1rem;
+    }
+    @media screen and (max-width: $mobile) {
+      max-width: 18rem;
+      width: 100%;
+      height: 2.25rem;
+      margin-top: 1rem;
+    }
+
     .logo {
       margin-left: 3.75rem;
+      @media screen and (max-width: $tablet) {
+        margin-left: 0.75rem;
+      }
+      img {
+        @media screen and (max-width: $macbook) {
+          width: 3.125rem;
+          height: 4.063rem;
+        }
+        @media screen and (max-width: $tablet) {
+          width: 1.938rem;
+          height: 2.5rem;
+        }
+        @media screen and (max-width: $mobile) {
+          width: 1.172rem;
+          height: 1.5rem;
+        }
+      }
     }
     .menu {
       width: 35.438rem;
       height: 4.875rem;
       margin-right: 60px;
       @include display_flex(space-between, center);
+
+      @media screen and (max-width: $macbook) {
+        width: 28.375rem;
+        height: 4.063rem;
+        margin-right: 50px;
+      }
+      @media screen and (max-width: $tablet) {
+        width: 15.688rem;
+        height: 2.938rem;
+        margin-right: 30px;
+      }
+      @media screen and (max-width: $mobile) {
+        display: none;
+      }
 
       .about_project {
         @include button_no_decor;
@@ -32,6 +81,18 @@ header {
         @include display_flex(center, center);
         cursor: pointer;
         @include nav_bar_hover;
+        font-family: "Noto Sans Georgian", sans-serif;
+
+        @media screen and (max-width: $macbook) {
+          width: 17.625rem;
+          height: 3.938rem;
+          font-size: 1.5rem;
+        }
+        @media screen and (max-width: $tablet) {
+          width: 10rem;
+          height: 2.938rem;
+          font-size: 0.75rem;
+        }
       }
 
       .video {
@@ -42,12 +103,93 @@ header {
         @include display_flex(center, center);
         cursor: pointer;
         @include nav_bar_hover;
+        font-family: "Noto Sans Georgian", sans-serif;
+
+        @media screen and (max-width: $macbook) {
+          width: 8.25rem;
+          height: 3.938rem;
+          font-size: 1.5rem;
+        }
+        @media screen and (max-width: $tablet) {
+          width: 4rem;
+          height: 2.938rem;
+          font-size: 0.75rem;
+        }
       }
 
       button {
         @include navigation_font_style();
       }
       .active {
+        background-color: $hoverColor;
+      }
+    }
+  }
+
+  .burger-menu {
+    @media screen and (min-width: $mobile) {
+      display: none;
+    }
+    button {
+      @include button_no_decor;
+      cursor: pointer;
+      img {
+        width: 32px;
+        height: 32px;
+        color: $hoverColor;
+        margin-right: 10px;
+      }
+    }
+    .popup-conteiner {
+      width: 13.813rem;
+      height: 8.75rem;
+      background-color: $mainColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 0.313rem;
+      position: relative;
+      display: none;
+      top: 2.75rem;
+      right: 0.75rem;
+      z-index: 999;
+
+      .about_project {
+        @include button_no_decor;
+        width: 8.75rem;
+        height: 2rem;
+        border-radius: 40px;
+        @include display_flex(center, center);
+        cursor: pointer;
+        @include nav_bar_hover;
+        font-family: "Noto Sans Georgian", sans-serif;
+        font-size: 0.75rem;
+        color: $menuTextcolor;
+        margin-top: 40px;
+      }
+      .video {
+        @include button_no_decor;
+        width: 4.063rem;
+        height: 2rem;
+        border-radius: 40px;
+        @include display_flex(center, center);
+        cursor: pointer;
+        @include nav_bar_hover;
+        font-family: "Noto Sans Georgian", sans-serif;
+        font-size: 0.75rem;
+        margin-top: 1rem;
+        color: $menuTextcolor;
+      }
+      .close_button {
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+      .active-popup {
         background-color: $hoverColor;
       }
     }
