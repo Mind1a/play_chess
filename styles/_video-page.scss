@@ -2,9 +2,11 @@
 @import "./utils/variables";
 
 .video-page2 {
-  min-height: 100vh;
-  display: none;
   margin-top: 3.75rem;
+  display: none;
+  @media screen and (max-width: $macbook) {
+    margin-top: 0rem;
+  }
 
   .video-section {
     max-width: 86.25rem;
@@ -12,7 +14,11 @@
     border-radius: 1rem;
     margin: auto;
     position: relative;
-    overflow: hidden;
+    @media screen and (max-width: $macbook) {
+      display: flex;
+      justify-content: center;
+      height: 28rem;
+    }
 
     .demo-video {
       position: absolute;
@@ -20,35 +26,61 @@
       height: 100%;
       padding-left: 3.75rem;
       padding-right: 3.75rem;
+      @media screen and (max-width: $macbook) {
+        max-width: 1000px;
+        max-height: 407px;
+        margin-top: 2.5rem;
+      }
     }
   }
 }
 .download-app-page2 {
-  .download-app-conteiner {
-    max-width: 72.25rem;
-    height: 18.063rem;
-    margin: auto;
-    @include display_flex(space-between);
-    flex-direction: column;
-    margin-top: 3.75rem;
+  max-width: 1280px;
+  height: 39.297rem;
+  margin: auto;
+  background-image: url(/img/chess-figure-group-left.svg),
+    url(/img/chess-figure-group-right.svg);
+  background-repeat: no-repeat;
+  background-position: left (30px) bottom, right (30px) bottom;
+  @media screen and (max-width: $macbook) {
+    height: 21.5rem;
+    max-width: 1200px;
+  }
 
-    h1 {
-      @include title-text_styles($titleColor, 3rem, 700);
+  .video-page-download {
+    margin-bottom: 3.75rem;
+    @media screen and (max-width: $macbook) {
+      display: none;
     }
-    .button-conteiner {
-      width: 72.25rem;
-      height: 11.5rem;
+    .download-app-conteiner {
+      max-width: 72.25rem;
+      height: 18.063rem;
+      margin: auto;
       @include display_flex(space-between);
+      flex-direction: column;
+      margin-top: 3.75rem;
 
-      .download-button {
-        width: 33.625rem;
+      h1 {
+        @include title-text_styles($titleColor, 3rem, 700);
+      }
+      .button-conteiner {
+        width: 72.25rem;
         height: 11.5rem;
-        @include button_no_decor;
-        background-color: $mainColor;
-        border-radius: 2.5rem;
-        @include nav_bar_hover;
-        @include text_styles($color: $menuTextcolor, $size: 2rem, $weigt: 600);
-        cursor: pointer;
+        @include display_flex(space-between);
+
+        .download-button {
+          width: 33.625rem;
+          height: 11.5rem;
+          @include button_no_decor;
+          background-color: $mainColor;
+          border-radius: 2.5rem;
+          @include nav_bar_hover;
+          @include text_styles(
+            $color: $menuTextcolor,
+            $size: 2rem,
+            $weigt: 600
+          );
+        }
       }
     }
   }
