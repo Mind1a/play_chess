@@ -110,3 +110,38 @@ function popupgoToPage1() {
 
   video.pause();
 }
+
+// ---------- see more -----------
+function resetText() {
+  const secondPart = document.getElementById("second-part");
+  const button = document.querySelector(".see-more button");
+
+  secondPart.classList.add("hidden");
+  button.textContent = "ვრცლად";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth >= 481) {
+    resetText();
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  resetText();
+});
+
+// ---------------------------
+function toggleText() {
+  const secondPart = document.getElementById("second-part");
+  const button = document.querySelector(".see-more button");
+
+  if (secondPart.classList.contains("hidden")) {
+    secondPart.classList.remove("hidden");
+    button.textContent = "აკეცვა";
+  } else {
+    secondPart.classList.add("hidden");
+    button.textContent = "ვრცლად";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}

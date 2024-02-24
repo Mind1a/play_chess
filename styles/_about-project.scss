@@ -6,7 +6,7 @@
   flex-direction: column;
   max-width: 1500.99px;
   margin: auto;
-  height: 53.991rem;
+  min-height: 53.991rem;
   margin-top: 3.75rem;
   padding-left: 3.75rem;
   padding-right: 3.75rem;
@@ -16,21 +16,110 @@
   background-position: left (30px) bottom, right (30px) bottom,
     left (38px) top (20px);
 
+  @media screen and (max-width: $macbook) {
+    min-height: 635px;
+    max-width: 1181px;
+    background-position: left (40px) bottom, right (40px) bottom,
+      left (10px) top (0px);
+    background-size: 180px 280px, 180px 280px, 150px 100px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    max-width: 687.6px;
+    min-height: 540px;
+    background-position: left (30px) bottom (0px), right (30px) bottom,
+      left (8px) top (0px);
+    background-size: 145px 228px, 145px 228px, 100px 70px;
+    margin-top: 2rem;
+  }
+
+  @media screen and (max-width: $mobile) {
+    max-width: 400.6px;
+    min-height: 520px;
+    background-position: left (40px) bottom, right (40px) bottom,
+      left (30px) top (0px);
+    background-size: 77px 118px, 77px 118px, 80px 60px;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+
   .text_section {
     max-width: 86.25rem;
-    height: 25.125rem;
+    min-height: 25.125rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 57px;
+    @media screen and (max-width: $macbook) {
+      min-height: 22rem;
+      margin-top: 0;
+      max-width: 1000px;
+    }
+    @media screen and (max-width: $tablet) {
+      min-height: 250px;
+      max-width: 606px;
+    }
+    @media screen and (max-width: $mobile) {
+      max-width: 262px;
+      min-height: 250px;
+    }
 
     h1 {
       @include title-text_styles($titleColor, 3rem, 700);
       line-height: 4rem;
+      @include title-responsive;
     }
-    p {
-      @include text_styles($textColor, 1.5rem, 400);
-      line-height: 2rem;
+    .hidden-text {
+      @media screen and (max-width: $mobile) {
+        display: none;
+      }
+      p {
+        @include text_styles($textColor, 1.5rem, 400);
+        line-height: 2rem;
+
+        @media screen and (max-width: $macbook) {
+          @include text_styles($textColor, 1.25rem, 400);
+          line-height: 1.688rem;
+        }
+        @media screen and (max-width: $tablet) {
+          @include text_styles($textColor, 1rem, 400);
+          line-height: 1.313rem;
+        }
+        @media screen and (max-width: $mobile) {
+          @include text_styles($textColor, 1rem, 400);
+          line-height: 1.313rem;
+        }
+      }
+    }
+
+    .see-more {
+      @media screen and (max-width: $mobile) {
+        @include text_styles($textColor, 1rem, 400);
+        line-height: 1.313rem;
+      }
+      @media screen and (min-width: 481px) {
+        @include text_styles($textColor, 1rem, 400);
+        line-height: 1.313rem;
+        display: none;
+      }
+      .hidden {
+        display: none;
+      }
+      button {
+        width: 6.563rem;
+        height: 2.188rem;
+        @include button_no_decor;
+        background-color: $mainColor;
+        border-radius: 2.5rem;
+        @include nav_bar_hover;
+        @include text_styles(
+          $color: $menuTextcolor,
+          $size: 0.875rem,
+          $weigt: 400
+        );
+        cursor: pointer;
+        margin-top: 0.625rem;
+      }
     }
   }
 
@@ -39,5 +128,36 @@
     height: 21.875rem;
     margin-top: 3.125rem;
     @include display_flex(space-between, center);
+
+    @media screen and (max-width: $macbook) {
+      width: 28.125rem;
+      height: 12.5rem;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 21.25rem;
+      height: 8.75rem;
+      margin-bottom: 1rem;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 13.25rem;
+      height: 6.25rem;
+      margin-bottom: 5rem;
+      margin-top: 1.5rem;
+    }
+
+    img {
+      @media screen and (max-width: $macbook) {
+        width: 12.5rem;
+        height: 12.5rem;
+      }
+      @media screen and (max-width: $tablet) {
+        width: 10rem;
+        height: 10rem;
+      }
+      @media screen and (max-width: $mobile) {
+        width: 6.25rem;
+        height: 6.25rem;
+      }
+    }
   }
 }
