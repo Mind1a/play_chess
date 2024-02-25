@@ -15,9 +15,9 @@ const swiper = new Swiper(".swiper", {
 // ----------navbar-pages-------
 
 function goToPage2() {
-  var page1 = document.getElementById("page1");
-  var page2 = document.getElementById("page2");
-  var video = document.getElementById("video1");
+  let page1 = document.getElementById("page1");
+  let page2 = document.getElementById("page2");
+  let video = document.getElementById("video1");
 
   page1.style.display = "none";
   page2.style.display = "block";
@@ -25,9 +25,9 @@ function goToPage2() {
 
 // Function to switch to page 1
 function goToPage1() {
-  var page1 = document.getElementById("page1");
-  var page2 = document.getElementById("page2");
-  var video = document.getElementById("video1");
+  let page1 = document.getElementById("page1");
+  let page2 = document.getElementById("page2");
+  let video = document.getElementById("video1");
 
   page2.style.display = "none";
   page1.style.display = "block";
@@ -91,9 +91,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function popupgoToPage2() {
-  var page1 = document.getElementById("page1");
-  var page2 = document.getElementById("page2");
-  var video = document.getElementById("video1");
+  let page1 = document.getElementById("page1");
+  let page2 = document.getElementById("page2");
+  let video = document.getElementById("video1");
 
   page1.style.display = "none";
   page2.style.display = "block";
@@ -101,9 +101,9 @@ function popupgoToPage2() {
 
 // Function to switch to page 1
 function popupgoToPage1() {
-  var page1 = document.getElementById("page1");
-  var page2 = document.getElementById("page2");
-  var video = document.getElementById("video1");
+  let page1 = document.getElementById("page1");
+  let page2 = document.getElementById("page2");
+  let video = document.getElementById("video1");
 
   page2.style.display = "none";
   page1.style.display = "block";
@@ -118,7 +118,6 @@ function resetText() {
 
   secondPart.classList.add("hidden");
   button.textContent = "ვრცლად";
-  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 window.addEventListener("resize", function () {
@@ -126,7 +125,6 @@ window.addEventListener("resize", function () {
     resetText();
   }
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   resetText();
 });
