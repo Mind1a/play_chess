@@ -59,9 +59,11 @@
   }
   @media screen and (max-width: $tablet) {
     @include title_text_styles($textColor, 1.875rem, 700);
+    line-height: 2.875rem;
   }
   @media screen and (max-width: $mobile) {
     @include title_text_styles($textColor, 1.375rem, 700);
     margin-bottom: 0;
+    line-height: 1.875rem;
   }
 }
