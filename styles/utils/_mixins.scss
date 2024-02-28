@@ -51,6 +51,18 @@
     transition-duration: 0.5s;
     background-color: $mainColor;
   }
+  @media screen and (max-width: $macbook) {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 2.813rem;
+    height: 2.813rem;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @mixin title-responsive {
