@@ -2,9 +2,8 @@
 @import "./utils/variables";
 
 .video-page2 {
-  margin-top: 3.75rem;
   display: none;
-  min-height: calc(100vh - 213px);
+  min-height: calc(100vh - 347px);
   @media screen and (max-width: $macbook) {
     margin-top: 0rem;
     min-height: calc(100vh - 314px);
@@ -55,6 +54,7 @@
       overflow: hidden;
       padding-left: 3.75rem;
       padding-right: 3.75rem;
+      margin-top: 2rem;
       @media screen and (max-width: $macbook) {
         max-width: 1000px;
         max-height: 407px;
