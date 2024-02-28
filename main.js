@@ -1,5 +1,5 @@
 // -------swiper-slider-----
-const swiper = new Swiper(".swiper", {
+const swiper_for_img = new Swiper(".swiper-for-img", {
   speed: 400,
   spaceBetween: 10,
   slidesPerView: 1,
@@ -12,8 +12,36 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// ----------navbar-pages-------
+// -------swiper-workers-card-slider--------
+const swiper = new Swiper(".swiper-workers-section", {
+  speed: 400,
+  spaceBetween: 10,
+  slidesPerView: "auto",
 
+  on: {
+    reachEnd: function () {
+      this.allowSlideNext = false;
+    },
+    reachBeginning: function () {
+      this.allowSlideNext = true;
+    },
+    slideChange: function () {
+      if (this.isBeginning) {
+        this.allowSlidePrev = false;
+      } else {
+        this.allowSlidePrev = true;
+      }
+
+      if (this.isEnd) {
+        this.allowSlideNext = false;
+      } else {
+        this.allowSlideNext = true;
+      }
+    },
+  },
+});
+
+// ----------navbar-pages-------
 function goToPage2() {
   let page1 = document.getElementById("page1");
   let page2 = document.getElementById("page2");

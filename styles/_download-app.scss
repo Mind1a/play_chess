@@ -4,10 +4,10 @@
 .download-app {
   width: 100%;
   margin: auto;
+  // display: none;
   @media screen and (max-width: $macbook) {
     display: none;
   }
-
   .download-app-conteiner {
     max-width: 72.25rem;
     height: 18.063rem;

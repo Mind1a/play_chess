@@ -4,9 +4,16 @@
 .video-page2 {
   margin-top: 3.75rem;
   display: none;
-  min-height: calc(100vh - 313px);
+  min-height: calc(100vh - 213px);
   @media screen and (max-width: $macbook) {
     margin-top: 0rem;
+    min-height: calc(100vh - 314px);
+  }
+  @media screen and (max-width: $tablet) {
+    min-height: calc(100vh - 276px);
+  }
+  @media screen and (max-width: $mobile) {
+    min-height: calc(100vh - 245px);
   }
 
   .video-section {
