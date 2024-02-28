@@ -902,9 +902,8 @@ footer .footer-container .footer-text span {
 }
 
 .video-page2 {
-  margin-top: 3.75rem;
   display: none;
-  min-height: calc(100vh - 213px);
+  min-height: calc(100vh - 347px);
 }
 @media screen and (max-width: 80rem) {
   .video-page2 {
@@ -964,6 +963,7 @@ footer .footer-container .footer-text span {
   overflow: hidden;
   padding-left: 3.75rem;
   padding-right: 3.75rem;
+  margin-top: 2rem;
 }
 @media screen and (max-width: 80rem) {
   .video-page2 .video-section .demo-video {
