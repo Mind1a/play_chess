@@ -6,15 +6,27 @@
   margin: auto;
   padding-left: 3.75rem;
   padding-right: 3.75rem;
+  // display: none;
   .project-working-group {
     max-width: 1380px;
-    height: 32.438rem;
+    min-height: 32.438rem;
     margin: auto;
     margin-top: 3.75rem;
     margin-bottom: 3.75rem;
+    @media screen and (max-width: $macbook) {
+      max-width: 1000px;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 604px;
+      display: none;
+    }
+    @media screen and (max-width: $mobile) {
+      max-width: 266px;
+    }
 
     .project-working-group-title {
       @include title-text_styles($titleColor, 3rem, 700);
+      @include title-responsive;
     }
     .project-working-group-cards-section {
       margin-top: 2.5rem;
@@ -22,8 +34,18 @@
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: auto;
       row-gap: 2.5rem;
-      column-gap: 1.25rem;
-      margin-top: 2.5rem;
+      column-gap: 1rem;
+      @media screen and (max-width: $macbook) {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+      }
+      @media screen and (max-width: $tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5rem;
+      }
+      @media screen and (max-width: $mobile) {
+        grid-template-columns: repeat(1, 1fr);
+      }
 
       .workers-card {
         max-width: 27.938rem;
@@ -35,11 +57,158 @@
         flex-direction: column;
         padding-left: 3.125rem;
 
-        h1 {
-          @include text_styles($color: $textColor, $size: 1.5rem, $weigt: 600);
+        @media screen and (max-width: $macbook) {
+          max-width: 20rem;
+          height: 9.188rem;
+          padding-left: 2.5rem;
+          border: 0.25rem solid $hoverColor;
         }
+        @media screen and (max-width: $tablet) {
+          max-width: 18.25rem;
+          height: 9.188rem;
+          padding-left: 1rem;
+          border: 0.25rem solid $hoverColor;
+        }
+        @media screen and (max-width: $mobile) {
+          max-width: 16.375rem;
+          height: 7.438rem;
+          border: 0.2rem solid $hoverColor;
+        }
+
+        .worker-name {
+          @include text_styles($color: $textColor, $size: 1.5rem, $weigt: 600);
+          @media screen and (max-width: $macbook) {
+            @include text_styles(
+              $color: $textColor,
+              $size: 1.5rem,
+              $weigt: 600
+            );
+          }
+          @media screen and (max-width: $tablet) {
+            @include text_styles(
+              $color: $textColor,
+              $size: 1.2rem,
+              $weigt: 600
+            );
+          }
+          @media screen and (max-width: $mobile) {
+            @include text_styles($color: $textColor, $size: 1rem, $weigt: 600);
+          }
+        }
+
         p {
           @include text_styles($color: $textColor, $size: 1.25rem, $weigt: 600);
+          @media screen and (max-width: $macbook) {
+            @include text_styles(
+              $color: $textColor,
+              $size: 1.25rem,
+              $weigt: 600
+            );
+          }
+          @media screen and (max-width: $tablet) {
+            @include text_styles(
+              $color: $textColor,
+              $size: 1.25rem,
+              $weigt: 600
+            );
+          }
+          @media screen and (max-width: $mobile) {
+            @include text_styles($color: $textColor, $size: 1rem, $weigt: 600);
+          }
+        }
+      }
+    }
+  }
+}
+
+// --------------------workers slider-------------------
+.workers-slider {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding-left: 60px;
+  padding-right: 60px;
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+  .swiper-workers-section {
+    max-width: 610px;
+    min-height: 210px;
+    @media screen and (max-width: $mobile) {
+      max-width: 266px;
+      min-height: 190px;
+    }
+    .project-working-group-title {
+      @include title-text_styles($titleColor, 3rem, 700);
+      @include title-responsive;
+    }
+    .swiper-wrapper-workers-card {
+      display: flex;
+      flex-direction: row;
+
+      .swiper-slide-workers-card {
+        max-width: 27.938rem;
+        height: 11.688rem;
+        transition: transform 0.5s ease;
+        border: 0.313rem solid $hoverColor;
+        border-radius: 2.5rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-left: 3.125rem;
+        margin-right: 0px;
+
+        @media screen and (min-width: 1025px) {
+          display: none;
+        }
+        @media screen and (max-width: 1025px) {
+          max-width: 18.25rem;
+          height: 9.188rem;
+          padding-left: 1rem;
+          border: 0.25rem solid $hoverColor;
+          border-radius: 1.563rem;
+        }
+        @media screen and (max-width: $mobile) {
+          max-width: 16.375rem;
+          height: 7.438rem;
+          border: 0.2rem solid $hoverColor;
+          border-radius: 0.938rem;
+          margin-top: 10px;
+        }
+
+        .worker-name {
+          @include text_styles($color: $textColor, $size: 1.5rem, $weigt: 600);
+          @media screen and (max-width: $macbook) {
+            @include text_styles(
+              $color: $textColor,
+              $size: 1.5rem,
+              $weigt: 600
+            );
+          }
+          @media screen and (max-width: $tablet) {
+            @include text_styles(
+              $color: $textColor,
+              $size: 1.2rem,
+              $weigt: 600
+            );
+          }
+          @media screen and (max-width: $mobile) {
+            @include text_styles($color: $textColor, $size: 1rem, $weigt: 600);
+          }
+        }
+
+        p {
+          @include text_styles($color: $textColor, $size: 1.25rem, $weigt: 600);
+
+          @media screen and (max-width: $tablet) {
+            @include text_styles(
+              $color: $textColor,
+              $size: 1.25rem,
+              $weigt: 600
+            );
+          }
+          @media screen and (max-width: $mobile) {
+            @include text_styles($color: $textColor, $size: 1rem, $weigt: 600);
+          }
         }
       }
     }
