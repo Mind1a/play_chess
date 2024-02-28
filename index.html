@@ -56,7 +56,7 @@
                     <div>
                         <h1>პროექტის შესახებ</h1>
                     </div>
-                    <div>
+                    <div class="hidden-text">
                         <p>
                             ციფრული საგანმანათლებლო რესურსი ,,ვთამაშობთ ჭადრაკს” გამიზნულია დაწყებითი საფეხურის
                             მოსწავლეებისთვის. ციფრული რესურსი ერთ-ერთი ყველაზე ძველი სამაგიდო თამაშის, ჭადრაკის
@@ -72,6 +72,30 @@
                             გადაჭრა და სხვა.
                         </p>
                     </div>
+                    <div class="see-more">
+                        <div id="first-part">
+                            <p>ციფრული საგანმანათლებლო რესურსი ,,ვთამაშობთ ჭადრაკს” გამიზნულია დაწყებითი საფეხურის
+                                მოსწავლეებისთვის. ციფრული რესურსი ერთ-ერთი ყველაზე ძველი სამაგიდო თამაშის, ჭადრაკის
+                                ელექტრონულ
+                                ვერსიას წარმოადგენს.</p>
+                        </div>
+                        <div id="second-part" class="hidden">
+                            <p>რესურსი ერთი მხრივ მასწავლებელს დაეხმარება თამაშის წესებისა და
+                                სხვადასხვა
+                                საჭადრაკო ამოცანების დემონსტრირება განახორციელოს, მეორე მხრივ კი მოსწავლეებს
+                                შესაძლებლობას
+                                მისცემს, თანატოლებთან ან კომპიუტერულ პროგრამასთან ერთად ითამაშონ საჭადრაკო პარტიები.
+                                ავტომატურ
+                                რეჟიმში ჩაიწერონ თამაში.<br>
+                                ჭადრაკის თამაში დაეხმარება მოსწავლეებს ისეთი უნარების განვითარებაში როგორიც არის:
+                                ლოგიკური
+                                აზროვნება, სტრატეგიული ხედვა, მეხსიერება, შემოქმედებითობა, კრიტიკული აზროვნება,
+                                პრობლემების
+                                გადაჭრა და სხვა.</p>
+                        </div>
+                        <button onclick="toggleText()">ვრცლად</button>
+                    </div>
+
                 </div>
                 <div class="chess-figure-bg">
                     <!-- <img src="img/chess-figure-group-left.svg" alt="chess-figure-group">
@@ -176,7 +200,7 @@
 
             <!--------------- slider --------------------->
             <section class="slider">
-                <div class="swiper">
+                <div class="swiper swiper-for-img">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="img/slider-photo-1.webp" alt="demo img"></div>
                         <div class="swiper-slide"><img src="img/slider-photo-2.webp" alt="demo img"></div>
@@ -208,38 +232,77 @@
                     </div>
                     <div class="project-working-group-cards-section">
                         <div class="workers-card">
-                            <h1>სახელი გვარი</h1>
+                            <p class="worker-name">სახელი გვარი</p>
                             <p>პოზიცია</p>
                             <p>linkedin</p>
                         </div>
                         <div class="workers-card">
-                            <h1>სახელი გვარი</h1>
+                            <p class="worker-name">სახელი გვარი</p>
                             <p>პოზიცია</p>
                             <p>linkedin</p>
                         </div>
                         <div class="workers-card">
-                            <h1>სახელი გვარი</h1>
+                            <p class="worker-name">სახელი გვარი</p>
                             <p>პოზიცია</p>
                             <p>linkedin</p>
                         </div>
                         <div class="workers-card">
-                            <h1>სახელი გვარი</h1>
+                            <p class="worker-name">სახელი გვარი</p>
                             <p>პოზიცია</p>
                             <p>linkedin</p>
                         </div>
                         <div class="workers-card">
-                            <h1>სახელი გვარი</h1>
+                            <p class="worker-name">სახელი გვარი</p>
                             <p>პოზიცია</p>
                             <p>linkedin</p>
                         </div>
                         <div class="workers-card">
-                            <h1>სახელი გვარი</h1>
+                            <p class="worker-name">სახელი გვარი</p>
                             <p>პოზიცია</p>
                             <p>linkedin</p>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="workers-slider">
+                <div class="swiper swiper-workers-section">
+                    <div class="project-working-group-title">
+                        <h1>პროექტზე მუშაობდნენ</h1>
+                    </div>
+                    <div class="swiper-wrapper swiper-wrapper-workers-card">
+                        <div class="swiper-slide swiper-slide-workers-card">
+                            <p class="worker-name">სახელი გვარი</p>
+                            <p>პოზიცია</p>
+                            <p>linkedin</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-workers-card">
+                            <p class="worker-name ">სახელი გვარი</p>
+                            <p>პოზიცია</p>
+                            <p>linkedin</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-workers-card">
+                            <p class="worker-name">სახელი გვარი</p>
+                            <p>პოზიცია</p>
+                            <p>linkedin</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-workers-card">
+                            <p class="worker-name">სახელი გვარი</p>
+                            <p>პოზიცია</p>
+                            <p>linkedin</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-workers-card">
+                            <p class="worker-name">სახელი გვარი</p>
+                            <p>პოზიცია</p>
+                            <p>linkedin</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-workers-card">
+                            <p class="worker-name">სახელი გვარი</p>
+                            <p>პოზიცია</p>
+                            <p>linkedin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--------------- video-page --------------------->
 

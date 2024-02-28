@@ -1,5 +1,5 @@
 // -------swiper-slider-----
-const swiper = new Swiper(".swiper", {
+const swiper_for_img = new Swiper(".swiper-for-img", {
   speed: 400,
   spaceBetween: 10,
   slidesPerView: 1,
@@ -12,12 +12,40 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// ----------navbar-pages-------
+// -------swiper-workers-card-slider--------
+const swiper = new Swiper(".swiper-workers-section", {
+  speed: 400,
+  spaceBetween: 10,
+  slidesPerView: "auto",
 
+  on: {
+    reachEnd: function () {
+      this.allowSlideNext = false;
+    },
+    reachBeginning: function () {
+      this.allowSlideNext = true;
+    },
+    slideChange: function () {
+      if (this.isBeginning) {
+        this.allowSlidePrev = false;
+      } else {
+        this.allowSlidePrev = true;
+      }
+
+      if (this.isEnd) {
+        this.allowSlideNext = false;
+      } else {
+        this.allowSlideNext = true;
+      }
+    },
+  },
+});
+
+// ----------navbar-pages-------
 function goToPage2() {
-  var page1 = document.getElementById("page1");
-  var page2 = document.getElementById("page2");
-  var video = document.getElementById("video1");
+  let page1 = document.getElementById("page1");
+  let page2 = document.getElementById("page2");
+  let video = document.getElementById("video1");
 
   page1.style.display = "none";
   page2.style.display = "block";
@@ -25,9 +53,9 @@ function goToPage2() {
 
 // Function to switch to page 1
 function goToPage1() {
-  var page1 = document.getElementById("page1");
-  var page2 = document.getElementById("page2");
-  var video = document.getElementById("video1");
+  let page1 = document.getElementById("page1");
+  let page2 = document.getElementById("page2");
+  let video = document.getElementById("video1");
 
   page2.style.display = "none";
   page1.style.display = "block";
@@ -91,9 +119,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function popupgoToPage2() {
-  var page1 = document.getElementById("page1");
-  var page2 = document.getElementById("page2");
-  var video = document.getElementById("video1");
+  let page1 = document.getElementById("page1");
+  let page2 = document.getElementById("page2");
+  let video = document.getElementById("video1");
 
   page1.style.display = "none";
   page2.style.display = "block";
@@ -101,12 +129,45 @@ function popupgoToPage2() {
 
 // Function to switch to page 1
 function popupgoToPage1() {
-  var page1 = document.getElementById("page1");
-  var page2 = document.getElementById("page2");
-  var video = document.getElementById("video1");
+  let page1 = document.getElementById("page1");
+  let page2 = document.getElementById("page2");
+  let video = document.getElementById("video1");
 
   page2.style.display = "none";
   page1.style.display = "block";
 
   video.pause();
+}
+
+// ---------- see more -----------
+function resetText() {
+  const secondPart = document.getElementById("second-part");
+  const button = document.querySelector(".see-more button");
+
+  secondPart.classList.add("hidden");
+  button.textContent = "ვრცლად";
+}
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth >= 481) {
+    resetText();
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  resetText();
+});
+
+// ---------------------------
+function toggleText() {
+  const secondPart = document.getElementById("second-part");
+  const button = document.querySelector(".see-more button");
+
+  if (secondPart.classList.contains("hidden")) {
+    secondPart.classList.remove("hidden");
+    button.textContent = "აკეცვა";
+  } else {
+    secondPart.classList.add("hidden");
+    button.textContent = "ვრცლად";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 }
