@@ -100,7 +100,7 @@ video {
   vertical-align: baseline;
   text-decoration: none;
 }
-// HTML5 display-role reset for older browsers */ article,
+/* HTML5 display-role reset for older browsers article,*/
 aside,
 details,
 figcaption,
@@ -115,6 +115,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: "Noto Sans Georgian", sans-serif;
 }
 ol,
 ul {

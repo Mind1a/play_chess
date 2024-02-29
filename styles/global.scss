@@ -7,91 +7,9 @@
 @import "./project-working-group";
 @import "./download-app";
 @import "./video-page";
-
-header {
-  @include display_flex(center, center);
-
-  .header_part {
-    max-width: 93.75rem;
-    width: 100%;
-    height: 8.625rem;
-    margin-top: 1.25rem;
-    border-radius: 60px;
-    background-color: $mainColor;
-    @include display_flex(space-between, center);
-
-    .logo {
-      margin-left: 3.75rem;
-    }
-    .menu {
-      width: 35.438rem;
-      height: 4.875rem;
-      margin-right: 60px;
-      @include display_flex(space-between, center);
-
-      .about_project {
-        @include button_no_decor;
-        width: 20.688rem;
-        height: 4.875rem;
-        border-radius: 40px;
-        @include display_flex(center, center);
-        cursor: pointer;
-        @include nav_bar_hover;
-      }
-
-      .video {
-        @include button_no_decor;
-        width: 9.75rem;
-        height: 4.875rem;
-        border-radius: 40px;
-        @include display_flex(center, center);
-        cursor: pointer;
-        @include nav_bar_hover;
-      }
-
-      button {
-        @include navigation_font_style();
-      }
-      .active {
-        background-color: $hoverColor;
-      }
-    }
-  }
-}
+@import "./about-project";
+@import "./header";
 
 main {
-  min-height: 100vh;
-
-  .section_about_project {
-    @include display_flex(center, center);
-    flex-direction: column;
-    max-width: 113.687rem;
-    width: 100%;
-    margin: auto;
-    height: 43.678rem;
-    margin-top: 3.75rem;
-
-    .text_section {
-      max-width: 86.25rem;
-      height: 14.813rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      h1 {
-        @include title-text_styles($titleColor, 3rem, 700);
-      }
-      p {
-        @include text_styles($textColor, 1.5rem, 400);
-        line-height: 2rem;
-      }
-    }
-
-    .artwork {
-      width: 48.75rem;
-      height: 21.875rem;
-      margin-top: 5.134rem;
-      @include display_flex(space-between, center);
-    }
-  }
+  min-height: calc(100vh - 351px);
 }

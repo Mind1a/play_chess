@@ -1,17 +1,20 @@
 @import "./utils/mixins";
-@import "./utils/reset";
 @import "./utils/variables";
 
 .download-app {
   width: 100%;
-
+  margin: auto;
+  // display: none;
+  @media screen and (max-width: $macbook) {
+    display: none;
+  }
   .download-app-conteiner {
     max-width: 72.25rem;
     height: 18.063rem;
     margin: auto;
     @include display_flex(space-between);
     flex-direction: column;
-    margin-bottom: 3.75rem;
+    margin-top: 3.75rem;
 
     h1 {
       @include title-text_styles($titleColor, 3rem, 700);

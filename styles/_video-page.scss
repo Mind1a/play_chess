@@ -1,21 +1,128 @@
 @import "./utils/mixins";
-@import "./utils/reset";
 @import "./utils/variables";
 
 .video-page2 {
-  min-height: 100vh;
   display: none;
+  min-height: calc(100vh - 347px);
+  @media screen and (max-width: $macbook) {
+    margin-top: 0rem;
+    min-height: calc(100vh - 314px);
+  }
+  @media screen and (max-width: $tablet) {
+    min-height: calc(100vh - 276px);
+  }
+  @media screen and (max-width: $mobile) {
+    min-height: calc(100vh - 245px);
+  }
 
   .video-section {
-    max-width: 86.25rem;
-    height: 41.75rem;
-    background-color: #d9d9d9;
+    max-width: 86rem;
+    // height: 44.75rem;
     border-radius: 1rem;
     margin: auto;
-    margin-top: 3.75rem;
-    margin-bottom: 3.75rem;
+    position: relative;
+    @media screen and (max-width: $macbook) {
+      display: flex;
+      justify-content: center;
+      background-image: url(/img/chess-figure-group-left.svg),
+        url(/img/chess-figure-group-right.svg);
+      background-repeat: no-repeat;
+      background-position: left (30px) bottom, right (30px) bottom;
+      background-size: 200px 310px, 200px 310px;
+      height: 41.75rem;
+      max-width: 1018px;
+    }
+    @media screen and (max-width: $tablet) {
+      background-position: left (20px) bottom (80px), right (20px) bottom (80px);
+      background-size: 140px 200px, 140px 200px;
+      height: 500px;
+      max-width: 600px;
+    }
+    @media screen and (max-width: $mobile) {
+      background-position: left (40px) bottom (100px),
+        right (40px) bottom (100px);
+      background-size: 70px 100px, 70px 100px;
+      max-width: 300px;
+      height: 300px;
+    }
+
+    .demo-video {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      padding-left: 3.75rem;
+      padding-right: 3.75rem;
+      margin-top: 2rem;
+      @media screen and (max-width: $macbook) {
+        max-width: 1000px;
+        max-height: 407px;
+        margin-top: 2.5rem;
+
+        @media screen and (max-width: $tablet) {
+          max-width: 504px;
+          max-height: 231px;
+          margin-top: 2.5rem;
+        }
+        @media screen and (max-width: $mobile) {
+          max-width: 262px;
+          max-height: 120px;
+          margin-top: 0.5rem;
+        }
+      }
+    }
   }
-  .download-app {
-    margin-bottom: 25rem;
+}
+.download-app-page2 {
+  max-width: 1280px;
+  height: 39.297rem;
+  margin: auto;
+  overflow: visible;
+  background-image: url(/img/chess-figure-group-left.svg),
+    url(/img/chess-figure-group-right.svg);
+  background-repeat: no-repeat;
+  background-position: left (30px) bottom, right (30px) bottom;
+  @media screen and (max-width: $macbook) {
+    height: 21.5rem;
+    max-width: 1200px;
+    display: none;
+  }
+
+  .video-page-download {
+    margin-bottom: 3.75rem;
+    @media screen and (max-width: $macbook) {
+    }
+    .download-app-conteiner {
+      max-width: 72.25rem;
+      height: 18.063rem;
+      margin: auto;
+      @include display_flex(space-between);
+      flex-direction: column;
+      margin-top: 3.75rem;
+
+      h1 {
+        @include title-text_styles($titleColor, 3rem, 700);
+      }
+      .button-conteiner {
+        width: 72.25rem;
+        height: 11.5rem;
+        @include display_flex(space-between);
+
+        .download-button {
+          width: 33.625rem;
+          height: 11.5rem;
+          @include button_no_decor;
+          background-color: $mainColor;
+          border-radius: 2.5rem;
+          @include nav_bar_hover;
+          @include text_styles(
+            $color: $menuTextcolor,
+            $size: 2rem,
+            $weigt: 600
+          );
+        }
+      }
+    }
   }
 }
