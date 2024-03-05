@@ -359,6 +359,54 @@ footer .footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 80rem) {
+  footer .footer-container {
+    height: 13.125rem;
+  }
+}
+@media screen and (max-width: 64rem) {
+  footer .footer-container {
+    height: 9.188rem;
+  }
+}
+@media screen and (max-width: 30rem) {
+  footer .footer-container {
+    height: 5.063rem;
+  }
+}
+footer .footer-container .cant-download {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 2.04rem;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+@media screen and (max-width: 80rem) {
+  footer .footer-container .cant-download {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.688rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 64rem) {
+  footer .footer-container .cant-download {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.313rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 30rem) {
+  footer .footer-container .cant-download {
+    font-size: 0.5rem;
+    font-weight: 400;
+    line-height: 0.625rem;
+    margin-bottom: 0.5rem;
+  }
 }
 footer .footer-container .footer-text {
   font-size: 1.5rem;
@@ -366,10 +414,58 @@ footer .footer-container .footer-text {
   color: #ffffff;
   line-height: 2.04rem;
 }
+@media screen and (max-width: 80rem) {
+  footer .footer-container .footer-text {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.688rem;
+  }
+}
+@media screen and (max-width: 64rem) {
+  footer .footer-container .footer-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.313rem;
+  }
+}
+@media screen and (max-width: 30rem) {
+  footer .footer-container .footer-text {
+    font-size: 0.5rem;
+    font-weight: 400;
+    line-height: 0.625rem;
+  }
+}
 footer .footer-container .footer-text span {
   color: #1d1e4a;
   font-weight: 600;
   line-height: 2.04rem;
+}
+@media screen and (max-width: 80rem) {
+  footer .footer-container .footer-text span {
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+  }
+}
+@media screen and (max-width: 64rem) {
+  footer .footer-container .footer-text span {
+    font-size: 1rem;
+    line-height: 1.313rem;
+  }
+}
+@media screen and (max-width: 30rem) {
+  footer .footer-container .footer-text span {
+    font-size: 0.5rem;
+    line-height: 0.625rem;
+  }
+}
+
+.hidden-text-footer {
+  display: none;
+}
+@media screen and (max-width: 80rem) {
+  .hidden-text-footer {
+    display: block;
+  }
 }
 
 .how-to-use-app {

@@ -7,17 +7,87 @@ footer {
     height: 12.063rem;
     background-color: $mainColor;
     @include display_flex();
+    flex-direction: column;
+    @media screen and (max-width: $macbook) {
+      height: 13.125rem;
+    }
+    @media screen and (max-width: $tablet) {
+      height: 9.188rem;
+    }
+    @media screen and (max-width: $mobile) {
+      height: 5.063rem;
+    }
+
+    .cant-download {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: $menuTextcolor;
+      line-height: 2.04rem;
+      margin-bottom: 1.875rem;
+      text-align: center;
+      @media screen and (max-width: $macbook) {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.688rem;
+        margin-bottom: 1.5rem;
+      }
+      @media screen and (max-width: $tablet) {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.313rem;
+        margin-bottom: 1rem;
+      }
+      @media screen and (max-width: $mobile) {
+        font-size: 0.5rem;
+        font-weight: 400;
+        line-height: 0.625rem;
+        margin-bottom: 0.5rem;
+      }
+    }
     .footer-text {
       font-size: 1.5rem;
       font-weight: 400;
       color: $menuTextcolor;
       line-height: 2.04rem;
+      @media screen and (max-width: $macbook) {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.688rem;
+      }
+      @media screen and (max-width: $tablet) {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.313rem;
+      }
+      @media screen and (max-width: $mobile) {
+        font-size: 0.5rem;
+        font-weight: 400;
+        line-height: 0.625rem;
+      }
 
       span {
         color: $hoverColor;
         font-weight: 600;
         line-height: 2.04rem;
+        @media screen and (max-width: $macbook) {
+          font-size: 1.25rem;
+          line-height: 1.688rem;
+        }
+        @media screen and (max-width: $tablet) {
+          font-size: 1rem;
+          line-height: 1.313rem;
+        }
+        @media screen and (max-width: $mobile) {
+          font-size: 0.5rem;
+          line-height: 0.625rem;
+        }
       }
     }
+  }
+}
+.hidden-text-footer {
+  display: none;
+  @media screen and (max-width: $macbook) {
+    display: block;
   }
 }
