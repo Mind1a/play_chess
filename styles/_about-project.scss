@@ -34,13 +34,15 @@
   }
 
   @media screen and (max-width: $mobile) {
-    max-width: 400.6px;
-    min-height: 520px;
-    background-position: left (40px) bottom, right (40px) bottom,
-      left (30px) top (0px);
+    max-width: 292.6px;
+    min-height: 500px;
+    background-position: left (0px) bottom, right (0px) bottom,
+      left (0px) top (0px);
     background-size: 77px 118px, 77px 118px, 80px 60px;
     margin-top: 1rem;
     justify-content: space-between;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .text_section {

@@ -6,7 +6,7 @@
   margin: auto;
   padding-left: 3.75rem;
   padding-right: 3.75rem;
-  // display: none;
+
   .project-working-group {
     max-width: 1380px;
     min-height: 32.438rem;
@@ -129,6 +129,10 @@
   padding-right: 60px;
   @media screen and (min-width: 1025px) {
     display: none;
+  }
+  @media screen and (max-width: $mobile) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   .swiper-workers-section {
     max-width: 610px;

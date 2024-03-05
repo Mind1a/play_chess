@@ -5,6 +5,10 @@ header {
   @include display_flex(center, center);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  @media screen and (max-width: $mobile) {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
 
   .header_part {
     max-width: 1500px;
@@ -152,9 +156,11 @@ header {
       border-radius: 0.313rem;
       position: relative;
       display: none;
-      top: 2.75rem;
-      right: 0.75rem;
-      z-index: 999;
+      top: 3.25rem;
+      right: 0rem;
+      z-index: 1000;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
       .about_project {
         @include button_no_decor;

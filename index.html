@@ -32,6 +32,7 @@
                 <button id="menuIcon" id="burger-menu-button">
                     <img src="/img/burger menu icon.svg" alt="burger menu icon">
                 </button>
+
                 <div class="popup-conteiner" id="popup-container">
                     <button onclick="popupgoToPage1()" class="about_project navbtn-popup active-popup">
                         პროექტის შესახებ
@@ -332,9 +333,12 @@
 
     <footer>
         <div class="footer-container">
-            <p class="footer-text">
+            <div id="download-message" class="cant-download hidden-text-footer">
+                აპლიკაციის ჩამოტვირთვა შესაძლებელია მხოლოდ Windows კომპიუტერებზე
+            </div>
+            <div class="footer-text">
                 საიტზე მუშაობდა <span>უნილაბის</span> გუნდი
-            </p>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

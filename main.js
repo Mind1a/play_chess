@@ -171,3 +171,20 @@ function toggleText() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 }
+
+//---------------------detect-OS----------------
+class DownloadMessage {
+  constructor() {
+    this.messageElement = document.getElementById("download-message");
+  }
+
+  isWindows() {
+    return /win/i.test(navigator.platform);
+  }
+
+  displayMessage() {
+    if (!this.isWindows()) {
+      this.messageElement.style.display = "block";
+    }
+  }
+}
