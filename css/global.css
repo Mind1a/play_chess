@@ -157,6 +157,12 @@ table {
   padding-left: 3.75rem;
   padding-right: 3.75rem;
 }
+@media screen and (max-width: 30rem) {
+  * .slider {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
 * .slider .swiper {
   width: 86.25rem;
   height: 47.25rem;
@@ -473,6 +479,12 @@ footer .footer-container .footer-text span {
   margin: auto;
   padding-left: 60px;
   padding-right: 60px;
+}
+@media screen and (max-width: 30rem) {
+  .how-to-use-app {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 .how-to-use-app .how-to-use-app-childe {
   max-width: 86.25rem;
@@ -813,6 +825,12 @@ footer .footer-container .footer-text span {
     display: none;
   }
 }
+@media screen and (max-width: 30rem) {
+  .workers-slider {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
 .workers-slider .swiper-workers-section {
   max-width: 610px;
   min-height: 210px;
@@ -1004,17 +1022,17 @@ footer .footer-container .footer-text span {
 @media screen and (max-width: 80rem) {
   .video-page2 {
     margin-top: 0rem;
-    min-height: calc(100vh - 314px);
+    min-height: calc(100vh - 331px);
   }
 }
 @media screen and (max-width: 64rem) {
   .video-page2 {
-    min-height: calc(100vh - 276px);
+    min-height: calc(100vh - 230px);
   }
 }
 @media screen and (max-width: 30rem) {
   .video-page2 {
-    min-height: calc(100vh - 245px);
+    min-height: calc(100vh - 133px);
   }
 }
 .video-page2 .video-section {
@@ -1045,7 +1063,7 @@ footer .footer-container .footer-text span {
 }
 @media screen and (max-width: 30rem) {
   .video-page2 .video-section {
-    background-position: left 40px bottom 100px, right 40px bottom 100px;
+    background-position: left 20px bottom 100px, right 20px bottom 100px;
     background-size: 70px 100px, 70px 100px;
     max-width: 300px;
     height: 300px;
@@ -1080,6 +1098,8 @@ footer .footer-container .footer-text span {
     max-width: 262px;
     max-height: 120px;
     margin-top: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
 }
 
@@ -1178,12 +1198,14 @@ footer .footer-container .footer-text span {
 }
 @media screen and (max-width: 30rem) {
   .section_about_project {
-    max-width: 400.6px;
-    min-height: 520px;
-    background-position: left 40px bottom, right 40px bottom, left 30px top 0px;
+    max-width: 292.6px;
+    min-height: 500px;
+    background-position: left 0px bottom, right 0px bottom, left 0px top 0px;
     background-size: 77px 118px, 77px 118px, 80px 60px;
     margin-top: 1rem;
     justify-content: space-between;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 .section_about_project .text_section {
@@ -1380,6 +1402,12 @@ header {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
+@media screen and (max-width: 30rem) {
+  header {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+}
 header .header_part {
   max-width: 1500px;
   width: 100%;
@@ -1568,9 +1596,10 @@ header .burger-menu .popup-conteiner {
   border-radius: 0.313rem;
   position: relative;
   display: none;
-  top: 2.75rem;
-  right: 0.75rem;
-  z-index: 999;
+  top: 3.25rem;
+  right: 0rem;
+  z-index: 1000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 header .burger-menu .popup-conteiner .about_project {
   padding: 0;
@@ -1627,6 +1656,6 @@ header .burger-menu .popup-conteiner .active-popup {
   background-color: #1d1e4a;
 }
 
-main {
-  min-height: calc(100vh - 351px);
+body {
+  background: white;
 }/*# sourceMappingURL=global.css.map */

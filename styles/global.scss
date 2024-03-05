@@ -11,5 +11,8 @@
 @import "./header";
 
 main {
-  min-height: calc(100vh - 351px);
+  // min-height: calc(100vh - 351px);
+}
+body {
+  background: white;
 }
