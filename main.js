@@ -1,23 +1,21 @@
-// -------swiper-slider-----
+
+
+// Swiper sliders
 const swiper_for_img = new Swiper('.swiper-for-img', {
   speed: 400,
   spaceBetween: 10,
   slidesPerView: 1,
-
   loop: true,
-
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 });
 
-// -------swiper-workers-card-slider--------
 const swiper = new Swiper('.swiper-workers-section', {
   speed: 400,
   spaceBetween: 10,
   slidesPerView: 'auto',
-
   on: {
     reachEnd: function () {
       this.allowSlideNext = false;
@@ -26,17 +24,8 @@ const swiper = new Swiper('.swiper-workers-section', {
       this.allowSlideNext = true;
     },
     slideChange: function () {
-      if (this.isBeginning) {
-        this.allowSlidePrev = false;
-      } else {
-        this.allowSlidePrev = true;
-      }
-
-      if (this.isEnd) {
-        this.allowSlideNext = false;
-      } else {
-        this.allowSlideNext = true;
-      }
+      this.allowSlidePrev = !this.isBeginning;
+      this.allowSlideNext = !this.isEnd;
     },
   },
 });
@@ -46,18 +35,14 @@ let activePage = 1;
 
 // Function to update active class
 function updateActiveClass() {
-  const navButtons = document.querySelectorAll('.navbtn');
-  const navPopupButtons = document.querySelectorAll('.navbtn-popup');
+  const updateClass = (selector, className) => {
+    document.querySelectorAll(selector).forEach((button, index) => {
+      button.classList.toggle(className, index === activePage - 1);
+    });
+  };
 
-  // Update nav buttons
-  navButtons.forEach((button, index) => {
-    button.classList.toggle('active', index === activePage - 1);
-  });
-
-  // Update nav popup buttons
-  navPopupButtons.forEach((button, index) => {
-    button.classList.toggle('active-popup', index === activePage - 1);
-  });
+  updateClass('.navbtn', 'active');
+  updateClass('.navbtn-popup', 'active-popup');
 }
 
 // Function to switch pages
@@ -66,13 +51,11 @@ function switchPage(pageNumber) {
   const page2 = document.getElementById('page2');
   const video = document.getElementById('video1');
 
+  page1.style.display = pageNumber === 1 ? 'block' : 'none';
+  page2.style.display = pageNumber === 2 ? 'block' : 'none';
+
   if (pageNumber === 1) {
-    page2.style.display = 'none';
-    page1.style.display = 'block';
     video.pause();
-  } else if (pageNumber === 2) {
-    page1.style.display = 'none';
-    page2.style.display = 'block';
   }
 
   activePage = pageNumber;
@@ -105,9 +88,41 @@ document
 window.addEventListener('resize', updateActiveClass);
 
 // Add event listeners for page navigation
-document.querySelectorAll('.navbtn').forEach((button, index) => {
-  button.addEventListener('click', () => switchPage(index + 1));
+['.navbtn', '.navbtn-popup'].forEach((selector) => {
+  document.querySelectorAll(selector).forEach((button, index) => {
+    button.addEventListener('click', () => switchPage(index + 1));
+  });
 });
-document.querySelectorAll('.navbtn-popup').forEach((button, index) => {
-  button.addEventListener('click', () => switchPage(index + 1));
+
+// ---------- see more -----------
+function resetText() {
+  const secondPart = document.getElementById('second-part');
+  const button = document.querySelector('.see-more button');
+
+  secondPart.classList.add('hidden');
+  button.textContent = 'ვრცლად';
+}
+
+window.addEventListener('resize', function () {
+  if (window.innerWidth >= 481) {
+    resetText();
+  }
 });
+document.addEventListener('DOMContentLoaded', function () {
+  resetText();
+});
+
+// ---------------------------
+function toggleText() {
+  const secondPart = document.getElementById('second-part');
+  const button = document.querySelector('.see-more button');
+
+  if (secondPart.classList.contains('hidden')) {
+    secondPart.classList.remove('hidden');
+    button.textContent = 'აკეცვა';
+  } else {
+    secondPart.classList.add('hidden');
+    button.textContent = 'ვრცლად';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
