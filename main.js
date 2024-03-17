@@ -1,5 +1,3 @@
-
-
 // Swiper sliders
 const swiper_for_img = new Swiper('.swiper-for-img', {
   speed: 400,
@@ -124,5 +122,25 @@ function toggleText() {
     secondPart.classList.add('hidden');
     button.textContent = 'ვრცლად';
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+// Updates the footer text and hides the download-app-page2 and download-app sections based on the user's operating system.
+if (navigator.userAgent.indexOf('Windows') === -1) {
+  const downloadSection = document.querySelector('.windows');
+  const downloadAppPage2 = document.querySelector('.download-app-page2');
+  const downloadApp = document.querySelector('.download-app');
+
+  // Update footer text for non-Windows users
+  downloadSection.innerHTML = `<h3>აპლიკაციის ჩამოტვირთვა შესაძლებელია<span> მხოლოდ Windows კომპიუტერებზე</span></h3>`;
+
+  // Hide download-app-page2 section
+  if (downloadAppPage2) {
+    downloadAppPage2.style.display = 'none';
+  }
+
+  // Hide download-app section
+  if (downloadApp) {
+    downloadApp.style.display = 'none';
   }
 }

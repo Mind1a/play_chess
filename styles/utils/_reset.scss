@@ -115,7 +115,7 @@ section {
 }
 body {
   line-height: 1;
-  font-family: "Noto Sans Georgian", sans-serif;
+  font-family: 'Noto Sans Georgian', sans-serif;
 }
 ol,
 ul {
@@ -129,7 +129,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
