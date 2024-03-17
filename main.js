@@ -1,23 +1,19 @@
-// -------swiper-slider-----
-const swiper_for_img = new Swiper(".swiper-for-img", {
+// Swiper sliders
+const swiper_for_img = new Swiper('.swiper-for-img', {
   speed: 400,
   spaceBetween: 10,
   slidesPerView: 1,
-
   loop: true,
-
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 
-// -------swiper-workers-card-slider--------
-const swiper = new Swiper(".swiper-workers-section", {
+const swiper = new Swiper('.swiper-workers-section', {
   speed: 400,
   spaceBetween: 10,
-  slidesPerView: "auto",
-
+  slidesPerView: 'auto',
   on: {
     reachEnd: function () {
       this.allowSlideNext = false;
@@ -26,148 +22,125 @@ const swiper = new Swiper(".swiper-workers-section", {
       this.allowSlideNext = true;
     },
     slideChange: function () {
-      if (this.isBeginning) {
-        this.allowSlidePrev = false;
-      } else {
-        this.allowSlidePrev = true;
-      }
-
-      if (this.isEnd) {
-        this.allowSlideNext = false;
-      } else {
-        this.allowSlideNext = true;
-      }
+      this.allowSlidePrev = !this.isBeginning;
+      this.allowSlideNext = !this.isEnd;
     },
   },
 });
 
-// ----------navbar-pages-------
-function goToPage2() {
-  let page1 = document.getElementById("page1");
-  let page2 = document.getElementById("page2");
-  let video = document.getElementById("video1");
+// Global variable to keep track of the active page
+let activePage = 1;
 
-  page1.style.display = "none";
-  page2.style.display = "block";
-}
-
-// Function to switch to page 1
-function goToPage1() {
-  let page1 = document.getElementById("page1");
-  let page2 = document.getElementById("page2");
-  let video = document.getElementById("video1");
-
-  page2.style.display = "none";
-  page1.style.display = "block";
-
-  video.pause();
-}
-
-// ----------navbar-hovers------
-
-document.addEventListener("DOMContentLoaded", function () {
-  const navButtons = document.querySelectorAll(".navbtn");
-  navButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      navButtons.forEach((btn) => {
-        btn.classList.remove("active");
-      });
-      this.classList.add("active");
+// Function to update active class
+function updateActiveClass() {
+  const updateClass = (selector, className) => {
+    document.querySelectorAll(selector).forEach((button, index) => {
+      button.classList.toggle(className, index === activePage - 1);
     });
-  });
-});
+  };
 
-// ----------popup----------
-document.addEventListener("DOMContentLoaded", function () {
-  const burgerMenuButton = document.querySelector(".burger-menu button");
-  const popupContainer = document.querySelector(
-    ".burger-menu .popup-conteiner"
-  );
-  const closeButton = document.querySelector(".burger-menu .close_button");
-  function togglePopup() {
-    if (
-      popupContainer.style.display === "none" ||
-      popupContainer.style.display === ""
-    ) {
-      popupContainer.style.display = "flex";
-      burgerMenuButton.style.display = "none";
-    } else {
-      popupContainer.style.display = "none";
-      burgerMenuButton.style.display = "block";
-    }
+  updateClass('.navbtn', 'active');
+  updateClass('.navbtn-popup', 'active-popup');
+}
+
+// Function to switch pages
+function switchPage(pageNumber) {
+  const page1 = document.getElementById('page1');
+  const page2 = document.getElementById('page2');
+  const video = document.getElementById('video1');
+
+  page1.style.display = pageNumber === 1 ? 'block' : 'none';
+  page2.style.display = pageNumber === 2 ? 'block' : 'none';
+
+  if (pageNumber === 1) {
+    video.pause();
   }
 
-  burgerMenuButton.addEventListener("click", togglePopup);
-
-  closeButton.addEventListener("click", function () {
-    popupContainer.style.display = "none";
-    burgerMenuButton.style.display = "block";
-  });
-});
-
-// ----------popup navbar-hovers-----------
-document.addEventListener("DOMContentLoaded", function () {
-  const navButtons = document.querySelectorAll(".navbtn-popup");
-  navButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      navButtons.forEach((btn) => {
-        btn.classList.remove("active-popup");
-      });
-      this.classList.add("active-popup");
-    });
-  });
-});
-
-function popupgoToPage2() {
-  let page1 = document.getElementById("page1");
-  let page2 = document.getElementById("page2");
-  let video = document.getElementById("video1");
-
-  page1.style.display = "none";
-  page2.style.display = "block";
+  activePage = pageNumber;
+  updateActiveClass();
 }
 
-// Function to switch to page 1
-function popupgoToPage1() {
-  let page1 = document.getElementById("page1");
-  let page2 = document.getElementById("page2");
-  let video = document.getElementById("video1");
-
-  page2.style.display = "none";
-  page1.style.display = "block";
-
-  video.pause();
+// Function to handle burger menu button click event
+function handleBurgerMenuClick() {
+  const burgerMenu = document.querySelector('.popup-conteiner');
+  const overlay = document.querySelector('.overlay');
+  burgerMenu.style.display = 'flex';
+  overlay.style.display = 'block';
 }
+
+// Function to handle close button click event
+function handleCloseButtonClick() {
+  const burgerMenu = document.querySelector('.popup-conteiner');
+  const overlay = document.querySelector('.overlay');
+  burgerMenu.style.display = 'none';
+  overlay.style.display = 'none';
+}
+
+// Add event listeners
+document
+  .querySelector('#menuIcon')
+  .addEventListener('click', handleBurgerMenuClick);
+document
+  .querySelector('.close_button')
+  .addEventListener('click', handleCloseButtonClick);
+window.addEventListener('resize', updateActiveClass);
+
+// Add event listeners for page navigation
+['.navbtn', '.navbtn-popup'].forEach((selector) => {
+  document.querySelectorAll(selector).forEach((button, index) => {
+    button.addEventListener('click', () => switchPage(index + 1));
+  });
+});
 
 // ---------- see more -----------
 function resetText() {
-  const secondPart = document.getElementById("second-part");
-  const button = document.querySelector(".see-more button");
+  const secondPart = document.getElementById('second-part');
+  const button = document.querySelector('.see-more button');
 
-  secondPart.classList.add("hidden");
-  button.textContent = "ვრცლად";
+  secondPart.classList.add('hidden');
+  button.textContent = 'ვრცლად';
 }
 
-window.addEventListener("resize", function () {
+window.addEventListener('resize', function () {
   if (window.innerWidth >= 481) {
     resetText();
   }
 });
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   resetText();
 });
 
 // ---------------------------
 function toggleText() {
-  const secondPart = document.getElementById("second-part");
-  const button = document.querySelector(".see-more button");
+  const secondPart = document.getElementById('second-part');
+  const button = document.querySelector('.see-more button');
 
-  if (secondPart.classList.contains("hidden")) {
-    secondPart.classList.remove("hidden");
-    button.textContent = "აკეცვა";
+  if (secondPart.classList.contains('hidden')) {
+    secondPart.classList.remove('hidden');
+    button.textContent = 'აკეცვა';
   } else {
-    secondPart.classList.add("hidden");
-    button.textContent = "ვრცლად";
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    secondPart.classList.add('hidden');
+    button.textContent = 'ვრცლად';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+// Updates the footer text and hides the download-app-page2 and download-app sections based on the user's operating system.
+if (navigator.userAgent.indexOf('Windows') === -1) {
+  const downloadSection = document.querySelector('.windows');
+  const downloadAppPage2 = document.querySelector('.download-app-page2');
+  const downloadApp = document.querySelector('.download-app');
+
+  // Update footer text for non-Windows users
+  downloadSection.innerHTML = `<h3>აპლიკაციის ჩამოტვირთვა შესაძლებელია<span> მხოლოდ Windows კომპიუტერებზე</span></h3>`;
+
+  // Hide download-app-page2 section
+  if (downloadAppPage2) {
+    downloadAppPage2.style.display = 'none';
+  }
+
+  // Hide download-app section
+  if (downloadApp) {
+    downloadApp.style.display = 'none';
   }
 }

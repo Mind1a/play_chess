@@ -1,344 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/global.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
     <title>Play Chess</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap"
-        rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header_part">
-            <div class="logo">
-                <img src="img/logo.svg" alt="Chess Logo SVG">
-            </div>
-            <nav class="menu">
-                <button onclick="goToPage1()" class="about_project active navbtn">
-                    პროექტის შესახებ
-                </button>
-                <button onclick="goToPage2()" class="video navbtn">
-                    ვიდეო
-                </button>
-            </nav>
+      <div class="header_part">
+        <div class="logo">
+          <img src="img/logo.svg" alt="Chess Logo SVG" />
+        </div>
+        <nav class="menu">
+          <button class="about_project active navbtn">პროექტის შესახებ</button>
+          <button class="video navbtn">ვიდეო</button>
+        </nav>
 
-            <div class="burger-menu">
-                <button id="menuIcon" id="burger-menu-button">
-                    <img src="/img/burger menu icon.svg" alt="burger menu icon">
-                </button>
-                <div class="popup-conteiner" id="popup-container">
-                    <button onclick="popupgoToPage1()" class="about_project navbtn-popup active-popup">
-                        პროექტის შესახებ
-                    </button>
-                    <button onclick="popupgoToPage2()" class="video navbtn-popup">
-                        ვიდეო
-                    </button>
-                    <button class="close_button">
-                        <img src="/img/Close_MD.svg" alt="Close_MD">
-                    </button>
-                </div>
-            </div>
+        <div class="burger-menu">
+          <button id="menuIcon" id="burger-menu-button">
+            <img src="/img/burger menu icon.svg" alt="burger menu icon" />
+          </button>
+
+          <div class="popup-conteiner" id="popup-container">
+            <button class="about_project navbtn-popup active-popup">
+              პროექტის შესახებ
+            </button>
+            <button class="video navbtn-popup">ვიდეო</button>
+            <button class="close_button">
+              <img src="img/Close_MD.svg" alt="Close_MD" />
+            </button>
+          </div>
         </div>
-        </div>
+      </div>
     </header>
 
     <main>
-        <div id="page1">
-            <!--------------- about-project --------------------->
-            <section class="section_about_project">
-                <div class="text_section">
-                    <div>
-                        <h1>პროექტის შესახებ</h1>
-                    </div>
-                    <div class="hidden-text">
-                        <p>
-                            ციფრული საგანმანათლებლო რესურსი ,,ვთამაშობთ ჭადრაკს” გამიზნულია დაწყებითი საფეხურის
-                            მოსწავლეებისთვის. ციფრული რესურსი ერთ-ერთი ყველაზე ძველი სამაგიდო თამაშის, ჭადრაკის
-                            ელექტრონულ
-                            ვერსიას წარმოადგენს. რესურსი ერთი მხრივ მასწავლებელს დაეხმარება თამაშის წესებისა და
-                            სხვადასხვა
-                            საჭადრაკო ამოცანების დემონსტრირება განახორციელოს, მეორე მხრივ კი მოსწავლეებს შესაძლებლობას
-                            მისცემს, თანატოლებთან ან კომპიუტერულ პროგრამასთან ერთად ითამაშონ საჭადრაკო პარტიები.
-                            ავტომატურ
-                            რეჟიმში ჩაიწერონ თამაში.<br>
-                            ჭადრაკის თამაში დაეხმარება მოსწავლეებს ისეთი უნარების განვითარებაში როგორიც არის: ლოგიკური
-                            აზროვნება, სტრატეგიული ხედვა, მეხსიერება, შემოქმედებითობა, კრიტიკული აზროვნება, პრობლემების
-                            გადაჭრა და სხვა.
-                        </p>
-                    </div>
-                    <div class="see-more">
-                        <div id="first-part">
-                            <p>ციფრული საგანმანათლებლო რესურსი ,,ვთამაშობთ ჭადრაკს” გამიზნულია დაწყებითი საფეხურის
-                                მოსწავლეებისთვის. ციფრული რესურსი ერთ-ერთი ყველაზე ძველი სამაგიდო თამაშის, ჭადრაკის
-                                ელექტრონულ
-                                ვერსიას წარმოადგენს.</p>
-                        </div>
-                        <div id="second-part" class="hidden">
-                            <p>რესურსი ერთი მხრივ მასწავლებელს დაეხმარება თამაშის წესებისა და
-                                სხვადასხვა
-                                საჭადრაკო ამოცანების დემონსტრირება განახორციელოს, მეორე მხრივ კი მოსწავლეებს
-                                შესაძლებლობას
-                                მისცემს, თანატოლებთან ან კომპიუტერულ პროგრამასთან ერთად ითამაშონ საჭადრაკო პარტიები.
-                                ავტომატურ
-                                რეჟიმში ჩაიწერონ თამაში.<br>
-                                ჭადრაკის თამაში დაეხმარება მოსწავლეებს ისეთი უნარების განვითარებაში როგორიც არის:
-                                ლოგიკური
-                                აზროვნება, სტრატეგიული ხედვა, მეხსიერება, შემოქმედებითობა, კრიტიკული აზროვნება,
-                                პრობლემების
-                                გადაჭრა და სხვა.</p>
-                        </div>
-                        <button onclick="toggleText()">ვრცლად</button>
-                    </div>
-
-                </div>
-                <div class="chess-figure-bg">
-                    <!-- <img src="img/chess-figure-group-left.svg" alt="chess-figure-group">
-                    <img src="img/chess-figure-group-rigt.svg" alt="chess-figure-group"> -->
-                </div>
-                <div class="artwork">
-                    <img src="img/Untitled-Artwork (1) 1.svg" alt="girl playing chess">
-                    <img src="img/Untitled-Artwork 1.svg" alt="boy playing chess">
-                </div>
-            </section>
-
-            <!--------------- how-to-use-app --------------------->
-            <section class="how-to-use-app">
-                <div class="how-to-use-app-childe">
-                    <div class="how-to-use-app-title">
-                        <h1>როგორ გამოვიყენოთ აპლიკაცია</h1>
-                    </div>
-                    <div class="chess-figures">
-                        <div class="chess-card">
-                            <img src="img/Chess Pieces (1).svg" alt="Chess Figure Pawn">
-                            <div class="figure-card-text">
-                                <h1 class="figure-title">პაიკი</h1>
-                                <p class="figur-text">პაიკი ყველაზე სუსტი,მაგრამ უშიშარი მებრძოლია.იგი მოძრაობს მხოლოდ
-                                    ვერტიკალურად ერთ უჯრაზე, საწყისი პოზიციიდან კი ერთ ან ორ უჯრაზე გადადის. პაიკს უკან
-                                    სვლა არ შეუძლია. თეთრი პაიკები განლაგებულია 2 ჰორიზონტალზე, ხოლო შავები 7
-                                    ჰორიზონტალზე. პაიკი მეტოქის ფიგურას კლავს დიაგონალურად წინ ერთ უჯრაზე, მარცხნივ ან
-                                    მარჯვნივ. პაკს აქვს ბევრი კარგი თვისება, ესენია: 1) გავლაზე აყვანა, 2) ფიგურის
-                                    გაცოცხლება. გავლაზე აყვანა შეიძლება მხოლოდ მეტოქის პაიკის ორ უჯრაზე გადაადგილების
-                                    საპასუხო სვლით. მომდევნო სვლიდან გავლაზე აყვანა აღარ შეიძლება. თეთრ პაიკს გავლაზე
-                                    აყვანის უფლება აქვს მხოლოდ მაშინ, როდესაც ის მეხუთე ჰორიზონტალზე იმყოფება. შავებს
-                                    პაიკის გავლაზე აყვანა მხოლოდ მეოთხე ჰორიზონტალიდან შეუძლია. როდესაც თეთრი პაიკი
-                                    მიაღწევს მერვე ჰორიზონტალს,ხოლო შავების პაიკი — პირველს, მაშინ შესაძლებელია პაიკის
-                                    გაცოცხლება ლაზიერად,ეტლად,კუდ ან მხედრად.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="chess-card">
-                            <img src="img/Chess Pieces (2).svg" alt="Chess Figure Pawn">
-                            <div class="figure-card-text">
-                                <h1 class="figure-title">ეტლი</h1>
-                                <p class="figur-text">სიძლიერით მეორე ფიგურა ლაზიერის შემდეგ. დაახლოებით უდრის ერთ
-                                    მსუბუქ ფიგურას და 1-2 პაიკს. ჭადრაკის პარტიის დაწყებისას თითოეულ მოთამაშეს ორი ეტლი
-                                    ჰყავს. პარტიის დასაწყისში ეტლები დგანან a1, h1, a8 და h8 უჯრებზე. ეტლი მოძრაობს
-                                    ვერტიკალურად და ჰორიზონტალურად უჯრათა ნებისმიერ რაოდენობაზე. მეტოქის ფიგურას იღებს
-                                    ასევე ვერტიკალურ და ჰორიზონტალურ ხაზებზე.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="chess-card">
-                            <img src="img/Chess Pieces (3).svg" alt="Chess Figure Pawn">
-                            <div class="figure-card-text">
-                                <h1 class="figure-title">მხედარი</h1>
-                                <p class="figur-text">მსუბუქი ფიგურა. სიძლიერით დაახლოებით კუს ან სამი პაიკის ტოლფასი.
-                                    ჭადრაკის პარტიის დაწყებისას თითოეულ მოთამაშეს ორი მხედარი ჰყავს. პარტიის დასაწყისში
-                                    მხედრები დგანან b1, g1, b8 და g8 უჯრებზე. მხედარი ერთადერთი ფიგურაა რომელსაც შეუძლია
-                                    გადაახტეს როგორც თავის, ასევე მეტოქის ფიგურებს. მხედრის მოძრაობა შემდეგია, მას
-                                    შეუძლია გადაადგილდეს ორი კვადრატი ვერტიკალურად და ერთი კვადრატი ჰორიზონტალურად, ან
-                                    ორი კვადრატი ჰორიზონტალურად და ერთი კვადრატი ვერტიკალურად.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="chess-card">
-                            <img src="img/Chess Pieces (4).svg" alt="Chess Figure Pawn">
-                            <div class="figure-card-text">
-                                <h1 class="figure-title">კუ</h1>
-                                <p class="figur-text">მსუბუქი ფიგურა. კუ სიძლიერით დაახლოებით მხედრის ან სამი პაიკის
-                                    ტოლფასია. ჭადრაკის პარტიის დაწყებისას თითოეულ მოთამაშეს ორი კუ ჰყავს. პარტიის
-                                    დასაწყისში კუები დგანან c1, f1, c8 და f8 უჯრებზე. ამ ოთხი კუდან ორი თეთრუჯრედოვანი
-                                    და ორიც შავუჯრედოვანი კუა. კუ მოძრაობს უჯრების ნებისმიერ რაოდენობაზე მხოლოდ იმ ფერის
-                                    დიაგონალებზე, რას ფერის უჯრაზეც დგას.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="chess-card">
-                            <img src="img/Chess Pieces (5).svg" alt="Chess Figure Pawn">
-                            <div class="figure-card-text">
-                                <h1 class="figure-title">ლაზიერი</h1>
-                                <p class="figur-text">ჭადრაკის ყველაზე ძლიერი ფიგურა. ჭადრაკის პარტიის დაწყებისას
-                                    თითოეულ მოთამაშეს ერთი ლაზიერი აქვს. ლაზიერები დგანან d1 და d8 უჯრებზე. ლაზიერი
-                                    დაახლოებით ორი ეტლის ან სამი მსუბუქი (მხედარი, კუ) ფიგურის ტოლფასია.
-
-                                    თამაშის მსვლელობისას ლაზიერს შეუძლია ვერტიკალურად, ჰორიზონტალურად და დიაგონალურად
-                                    ნებისმიერი რაოდენობის უჯრაზე გადაადგილება იმ პირობით, თუ მის გზაზე სხვა ფიგურა არ
-                                    დგას. ასევე ყველა მიმართულებით შეუძლია აიყვანოს მეტოქის ნებისმიერი ფიგურა.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="chess-card">
-                            <img src="img/Chess Pieces (6).svg" alt="Chess Figure Pawn">
-                            <div class="figure-card-text">
-                                <h1 class="figure-title">მეფე</h1>
-                                <p class="figur-text">ჭადრაკში მთავარი ფიგურა არის მეფე და მისი დატყვევება, ე. ი.
-                                    დაშამათება, თამაშის დამთავრებას ნიშნავს. იგებს ის, ვინც მოახერხებს მოწინააღმდეგის
-                                    მეფის დაშამათებას. მეფის სვლები, სხვა ფიგურებთან შედარებით, ძალზე შეზღუდულია. მას
-                                    შეუძლია გადაადგილდეს ნებისმიერ მეზობელ უჯრაზე.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--------------- slider --------------------->
-            <section class="slider">
-                <div class="swiper swiper-for-img">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/slider-photo-1.webp" alt="demo img"></div>
-                        <div class="swiper-slide"><img src="img/slider-photo-2.webp" alt="demo img"></div>
-                        <div class="swiper-slide"><img src="img/slider-photo-3.webp" alt="demo img"></div>
-                        <div class="swiper-slide"><img src="img/slider-photo-4.jpeg" alt="demo img"></div>
-                        <div class="swiper-slide"><img src="img/slider-photo-5.jpg" alt="demo img"></div>
-                    </div>
-                    <div class="swiper-button-prev padding-button-prev"></div>
-                    <div class="swiper-button-next padding-button-next"></div>
-                </div>
-            </section>
-
-            <!--------------- download-app --------------------->
-            <section class="download-app">
-                <div class="download-app-conteiner">
-                    <h1>ჩამოტვირთე აპლიკაცია</h1>
-                    <div class="button-conteiner">
-                        <button class="download-button">ჩამოტვირთე (64 bit)</button>
-                        <button class="download-button">ჩამოტვირთე (32 bit)</button>
-                    </div>
-                </div>
-            </section>
-
-            <!--------------- project-working-group --------------------->
-            <section class="project-working-group-main">
-                <div class="project-working-group">
-                    <div class="project-working-group-title">
-                        <h1>პროექტზე მუშაობდნენ</h1>
-                    </div>
-                    <div class="project-working-group-cards-section">
-                        <div class="workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                        <div class="workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                        <div class="workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                        <div class="workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                        <div class="workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                        <div class="workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="workers-slider">
-                <div class="swiper swiper-workers-section">
-                    <div class="project-working-group-title">
-                        <h1>პროექტზე მუშაობდნენ</h1>
-                    </div>
-                    <div class="swiper-wrapper swiper-wrapper-workers-card">
-                        <div class="swiper-slide swiper-slide-workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                        <div class="swiper-slide swiper-slide-workers-card">
-                            <p class="worker-name ">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                        <div class="swiper-slide swiper-slide-workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                        <div class="swiper-slide swiper-slide-workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                        <div class="swiper-slide swiper-slide-workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                        <div class="swiper-slide swiper-slide-workers-card">
-                            <p class="worker-name">სახელი გვარი</p>
-                            <p>პოზიცია</p>
-                            <p>linkedin</p>
-                        </div>
-                    </div>
-                </div>
+      <div id="page1">
+        <!--------------- about-project --------------------->
+        <section class="section_about_project">
+          <div class="text_section">
+            <div>
+              <h1>პროექტის შესახებ</h1>
             </div>
+            <div class="hidden-text">
+              <p>
+                ციფრული საგანმანათლებლო რესურსი ,,ვთამაშობთ ჭადრაკს” გამიზნულია
+                დაწყებითი საფეხურის მოსწავლეებისთვის. ციფრული რესურსი ერთ-ერთი
+                ყველაზე ძველი სამაგიდო თამაშის, ჭადრაკის ელექტრონულ ვერსიას
+                წარმოადგენს. რესურსი ერთი მხრივ მასწავლებელს დაეხმარება თამაშის
+                წესებისა და სხვადასხვა საჭადრაკო ამოცანების დემონსტრირება
+                განახორციელოს, მეორე მხრივ კი მოსწავლეებს შესაძლებლობას მისცემს,
+                თანატოლებთან ან კომპიუტერულ პროგრამასთან ერთად ითამაშონ
+                საჭადრაკო პარტიები. ავტომატურ რეჟიმში ჩაიწერონ თამაში.<br />
+                ჭადრაკის თამაში დაეხმარება მოსწავლეებს ისეთი უნარების
+                განვითარებაში როგორიც არის: ლოგიკური აზროვნება, სტრატეგიული
+                ხედვა, მეხსიერება, შემოქმედებითობა, კრიტიკული აზროვნება,
+                პრობლემების გადაჭრა და სხვა.
+              </p>
+            </div>
+            <div class="see-more">
+              <div id="first-part">
+                <p>
+                  ციფრული საგანმანათლებლო რესურსი ,,ვთამაშობთ ჭადრაკს”
+                  გამიზნულია დაწყებითი საფეხურის მოსწავლეებისთვის. ციფრული
+                  რესურსი ერთ-ერთი ყველაზე ძველი სამაგიდო თამაშის, ჭადრაკის
+                  ელექტრონულ ვერსიას წარმოადგენს.
+                </p>
+              </div>
+              <div id="second-part" class="hidden">
+                <p>
+                  რესურსი ერთი მხრივ მასწავლებელს დაეხმარება თამაშის წესებისა და
+                  სხვადასხვა საჭადრაკო ამოცანების დემონსტრირება განახორციელოს,
+                  მეორე მხრივ კი მოსწავლეებს შესაძლებლობას მისცემს, თანატოლებთან
+                  ან კომპიუტერულ პროგრამასთან ერთად ითამაშონ საჭადრაკო პარტიები.
+                  ავტომატურ რეჟიმში ჩაიწერონ თამაში.<br />
+                  ჭადრაკის თამაში დაეხმარება მოსწავლეებს ისეთი უნარების
+                  განვითარებაში როგორიც არის: ლოგიკური აზროვნება, სტრატეგიული
+                  ხედვა, მეხსიერება, შემოქმედებითობა, კრიტიკული აზროვნება,
+                  პრობლემების გადაჭრა და სხვა.
+                </p>
+              </div>
+              <button onclick="toggleText()">ვრცლად</button>
+            </div>
+          </div>
+          <div class="chess-figure-bg">
+            <!-- <img src="img/chess-figure-group-left.svg" alt="chess-figure-group">
+                    <img src="img/chess-figure-group-rigt.svg" alt="chess-figure-group"> -->
+          </div>
+          <div class="artwork">
+            <img
+              src="img/Untitled-Artwork (1) 1.svg"
+              alt="girl playing chess"
+            />
+            <img src="img/Untitled-Artwork 1.svg" alt="boy playing chess" />
+          </div>
+        </section>
+
+        <!--------------- how-to-use-app --------------------->
+        <section class="how-to-use-app">
+          <div class="how-to-use-app-childe">
+            <div class="how-to-use-app-title">
+              <h1>როგორ გამოვიყენოთ აპლიკაცია</h1>
+            </div>
+            <div class="chess-figures" id="chessFiguresContainer">
+              <!-- Cards will be dynamically added here -->
+            </div>
+          </div>
+        </section>
+
+        <!--------------- slider --------------------->
+        <section class="slider">
+          <div class="swiper swiper-for-img">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/slider-photo-1.webp" alt="demo img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider-photo-2.webp" alt="demo img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider-photo-3.webp" alt="demo img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider-photo-4.jpeg" alt="demo img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider-photo-5.jpg" alt="demo img" />
+              </div>
+            </div>
+            <div class="swiper-button-prev padding-button-prev"></div>
+            <div class="swiper-button-next padding-button-next"></div>
+          </div>
+        </section>
+
+        <!--------------- download-app --------------------->
+        <section class="download-app">
+          <div class="download-app-conteiner">
+            <h1>ჩამოტვირთე აპლიკაცია</h1>
+            <div class="button-conteiner">
+              <button class="download-button">ჩამოტვირთე (64 bit)</button>
+              <button class="download-button">ჩამოტვირთე (32 bit)</button>
+            </div>
+          </div>
+        </section>
+
+        <!--------------- project-working-group --------------------->
+        <section class="project-working-group-main">
+          <div class="project-working-group">
+            <div class="project-working-group-title">
+              <h1>პროექტზე მუშაობდნენ</h1>
+            </div>
+            <div class="project-working-group-cards-section">
+              <div class="workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+              <div class="workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+              <div class="workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+              <div class="workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+              <div class="workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+              <div class="workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="workers-slider">
+          <div class="swiper swiper-workers-section">
+            <div class="project-working-group-title">
+              <h1>პროექტზე მუშაობდნენ</h1>
+            </div>
+            <div class="swiper-wrapper swiper-wrapper-workers-card">
+              <div class="swiper-slide swiper-slide-workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+              <div class="swiper-slide swiper-slide-workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+              <div class="swiper-slide swiper-slide-workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+              <div class="swiper-slide swiper-slide-workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+              <div class="swiper-slide swiper-slide-workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+              <div class="swiper-slide swiper-slide-workers-card">
+                <p class="worker-name">სახელი გვარი</p>
+                <p>პოზიცია</p>
+                <p>linkedin</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!--------------- video-page --------------------->
+      </div>
+      <!--------------- video-page --------------------->
 
-        <div id="page2" class="video-page2">
-            <section class="video-section">
-                <video class="demo-video" id="video1" controls>
-                    <source src="img/The Chess Game l Cinematic Chess B Roll l Edelkrone.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </section>
+      <div id="page2" class="video-page2">
+        <section class="video-section">
+          <video class="demo-video" id="video1" controls>
+            <source
+              src="img/The Chess Game l Cinematic Chess B Roll l Edelkrone.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </section>
 
-            <!--------------- download-app-page2 --------------------->
+        <!--------------- download-app-page2 --------------------->
 
-            <section class="download-app-page2">
-                <div class="video-page-download">
-                    <div class="download-app-conteiner">
-                        <h1>ჩამოტვირთე აპლიკაცია</h1>
-                        <div class="button-conteiner">
-                            <button class="download-button">ჩამოტვირთე (64 bit)</button>
-                            <button class="download-button">ჩამოტვირთე (32 bit)</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <section class="download-app-page2">
+          <div class="video-page-download">
+            <div class="download-app-conteiner">
+              <h1>ჩამოტვირთე აპლიკაცია</h1>
+              <div class="button-conteiner">
+                <button class="download-button">ჩამოტვირთე (64 bit)</button>
+                <button class="download-button">ჩამოტვირთე (32 bit)</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
-        <div class="footer-container">
-            <p class="footer-text">
-                საიტზე მუშაობდა <span>უნილაბის</span> გუნდი
-            </p>
+      <div class="footer-container">
+        <div
+          id="download-message"
+          class="cant-download hidden-text-footer windows"
+        ></div>
+        <div class="footer-text">
+          საიტზე მუშაობდა <span>უნილაბის</span> გუნდი
         </div>
+      </div>
+      <!-- <div class="download">
+        <div class="windows">
+          <div class="footer-text">
+            საიტზე მუშაობდა <span>უნილაბის</span> გუნდი
+          </div>
+        </div>
+      </div> -->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="chessFiguree.js" type="module"></script>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
