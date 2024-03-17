@@ -1045,7 +1045,7 @@ footer .footer-container .footer-text span {
   .video-page2 .video-section {
     display: flex;
     justify-content: center;
-    background-image: url(img/chess-figure-group-left.svg), url(img/chess-figure-group-right.svg);
+    background-image: url(/img/chess-figure-group-left.svg), url(/img/chess-figure-group-right.svg);
     background-repeat: no-repeat;
     background-position: left 30px bottom, right 30px bottom;
     background-size: 200px 310px, 200px 310px;
@@ -1108,7 +1108,7 @@ footer .footer-container .footer-text span {
   height: 39.297rem;
   margin: auto;
   overflow: visible;
-  background-image: url(img/chess-figure-group-left.svg), url(img/chess-figure-group-right.svg);
+  background-image: url(/img/chess-figure-group-left.svg), url(/img/chess-figure-group-right.svg);
   background-repeat: no-repeat;
   background-position: left 30px bottom, right 30px bottom;
 }
@@ -1175,7 +1175,7 @@ footer .footer-container .footer-text span {
   margin-top: 3.75rem;
   padding-left: 3.75rem;
   padding-right: 3.75rem;
-  background-image: url(img/chess-figure-group-left.svg), url(img/chess-figure-group-right.svg), url(img/chess-figure.svg);
+  background-image: url(/img/chess-figure-group-left.svg), url(/img/chess-figure-group-right.svg), url(/img/chess-figure.svg);
   background-repeat: no-repeat;
   background-position: left 30px bottom, right 30px bottom, left 38px top 20px;
 }
